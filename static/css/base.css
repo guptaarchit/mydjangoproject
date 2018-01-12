@@ -1,0 +1,6 @@
+.partitionL { width: 50%; float: left; }
+.partitionR { width: 50%; float: right; }
+#div1 { background: #DDD; }
+#div2 { background: #AAA; }
+#div3 { background: #DDD; }
+#div4 { background: #AAA; }
