@@ -1,0 +1,488 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+    {% block body_block %}
+        <div class="btn-group container" role="group" align="center">
+            <div id="button2" class="btn btn-default" data-role="button">Selected</div>
+            <div id="button1" class="btn btn-default" data-role="button">1 Week</div>
+            <div id="button3" class="btn btn-default" data-role="button">1 Day</div>
+        </div>
+        <div class="chart-style">
+            <!--<div class="partitionL" style="float:left; width:50%; display:inline-block; margin-top:20px;">-->
+                <div id="div1" style="margin:10px"> <!-- style="margin-right:50px">-->
+                    <canvas id="cpu-line-chart" width="1200" height="400" class="chart"></canvas>
+                </div>
+                <div id="div2" style="margin:10px"> <!--style="margin-top:25%; margin-right:50px; margin-bottom:20%; ">-->
+                    <canvas id="reboot-bar-chart" width="1200" height="400"  class="chart"></canvas>
+                </div>
+            <!--</div>-->
+            <!--<div class="partitionR" style="float:right; width:50%; display:inline-block">-->
+                <div id="div3" style="margin:10px"> <!-- style="margin-left:50px">-->
+                    <canvas id="crash-bar-chart" width="1200" height="400"  class="chart" ></canvas>
+                </div>
+                <div id="div4" style="margin:10px"> <!-- style="margin-top:25%;margin-left:50px; margin-bottom:20%;">-->
+                    <canvas id="memory-line-chart" width="1200" height="400"  class="chart"></canvas>
+                </div>
+             <!--<div id="div12" style="margin:10px"> &lt;!&ndash; style="margin-right:50px">&ndash;&gt;-->
+                    <!--<canvas id="cpu-line-chart2" width="1200" height="400" class="chart"></canvas></div>-->
+                <!--<div id="div22" style="margin:10px"> &lt;!&ndash;style="margin-top:25%; margin-right:50px; margin-bottom:20%; ">&ndash;&gt;-->
+                    <!--<canvas id="reboot-bar-chart2" width="1200" height="400"  class="chart"></canvas>-->
+                <!--</div>-->
+            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+            <!--&lt;!&ndash;<div class="partitionR" style="float:right; width:50%; display:inline-block">&ndash;&gt;-->
+                <!--<div id="div32" style="margin:10px"> &lt;!&ndash; style="margin-left:50px">&ndash;&gt;-->
+                    <!--<canvas id="crash-bar-chart2" width="1200" height="400"  class="chart" ></canvas>-->
+                <!--</div>-->
+                <!--<div id="div42" style="margin:10px"> &lt;!&ndash; style="margin-top:25%;margin-left:50px; margin-bottom:20%;">&ndash;&gt;-->
+                    <!--<canvas id="memory-line-chart2" width="1200" height="400"  class="chart"></canvas>-->
+                <!--</div>-->
+
+             <!--<div id="div13" style="margin:10px"> &lt;!&ndash; style="margin-right:50px">&ndash;&gt;-->
+                    <!--<canvas id="cpu-line-chart3" width="1200" height="400" class="chart"></canvas></div>-->
+                <!--<div id="div23" style="margin:10px"> &lt;!&ndash;style="margin-top:25%; margin-right:50px; margin-bottom:20%; ">&ndash;&gt;-->
+                    <!--<canvas id="reboot-bar-chart3" width="1200" height="400"  class="chart"></canvas>-->
+                <!--</div>-->
+            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+            <!--&lt;!&ndash;<div class="partitionR" style="float:right; width:50%; display:inline-block">&ndash;&gt;-->
+                <!--<div id="div33" style="margin:10px"> &lt;!&ndash; style="margin-left:50px">&ndash;&gt;-->
+                    <!--<canvas id="crash-bar-chart3" width="1200" height="400"  class="chart" ></canvas>-->
+                <!--</div>-->
+                <!--<div id="div43" style="margin:10px"> &lt;!&ndash; style="margin-top:25%;margin-left:50px; margin-bottom:20%;">&ndash;&gt;-->
+                    <!--<canvas id="memory-line-chart3" width="1200" height="400"  class="chart"></canvas>-->
+                <!--</div>-->
+            <!--</div>-->
+        </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+            <script src="{% static 'node_modules/angular/angular.js' %}" type="text/javascript">
+
+            <!--<script  src='{% static "js/myChart.js" %}' type="text/javascript"></script>-->
+            <script id="b1" type="text/javascript">
+                $( document ).ready(function() {
+                //Reboot Count js
+                <!--alert("button2")-->
+                <!--$('#b3','#b2','#b4').hide();-->
+
+                $('#reboot-bar-chart,#crash-bar-chart,#memory-line-chart,#cpu-line-chart').remove();
+                $('#div1').append('<canvas id="cpu-line-chart"><canvas>');
+                $('#div2').append('<canvas id="reboot-bar-chart"><canvas>');
+                $('#div3').append('<canvas id="crash-bar-chart"><canvas>');
+                $('#div4').append('<canvas id="memory-line-chart"><canvas>');
+
+
+
+                <!--$('#reboot-bar-chart3,#crash-bar-chart3,#memory-line-chart3,#cpu-line-chart3,#reboot-bar-chart2,#crash-bar-chart2,#memory-line-chart2,#cpu-line-chart2').detach();-->
+                new Chart(document.getElementById("reboot-bar-chart").getContext("2d")  , {
+                type: 'bar',
+                data: {
+                  datasets: [
+                    {
+                      label: "Reboot Count",
+                      backgroundColor: {{ bg_color_reboot_selected|safe }},
+                      data: {{ device_reboot_selected }}
+                    }
+                  ],
+                  labels: {{ device_ips_selected|safe }}
+                },
+                options: {
+                  legend: { display: false },
+                  title: {
+                    display: true,
+                    text: 'Device Reboot Count'
+                  }
+                }
+                });
+                //Crash Count js
+                new Chart(document.getElementById("crash-bar-chart"), {
+                type: 'bar',
+                data: {
+                  datasets: [
+                    {
+                      label: "Crash Count",
+                      backgroundColor: {{ bg_color_cpu_selected|safe }},
+                      data: {{ device_crash_selected }}
+                    }
+                  ],
+                  labels: {{ device_ips_selected|safe }}
+                },
+                options: {
+                  legend: { display: false },
+                  title: {
+                    display: true,
+                    text: 'Device Crash Count'
+                  }
+                }
+                });
+                //Memory Statistics
+
+                var memoryData = {
+                  labels: {{ date_list|safe }},
+                  datasets: {{ memory_values_selected|safe }}
+                };
+                var memoryChartOptions = {
+                    legend: {
+                        display: true,
+                        position: 'top',
+                        labels: {
+                            boxWidth: 80,
+                            fontColor: 'black'
+                        }
+                    },
+                    title: {
+                      display: true,
+                        text: 'Device Memory in mb'
+                  }
+                };
+                new Chart(document.getElementById("memory-line-chart"), {
+                  type: 'line',
+                  data: memoryData,
+                  options: memoryChartOptions
+                });
+                //CPU charts
+                  var cpuData = {
+                  labels: {{ date_list|safe }},
+                  datasets: {{ cpu_values_selected|safe }}
+                };
+                var cpuChartOptions = {
+                    legend: {
+                        display: true,
+                        position: 'top',
+                        labels: {
+                            boxWidth: 80,
+                            fontColor: 'black'
+                        }
+                    },
+                    title: {
+                      display: true,
+                        text: 'CPU usage'
+                  }
+
+                };
+                new Chart(document.getElementById("cpu-line-chart"), {
+                  type: 'line',
+                  data: cpuData,
+                  options: cpuChartOptions
+                });
+            });
+            </script>
+            <script id="b2" type="text/javascript">
+$(function() {
+     $("#button1").click(function() {
+        //Reboot Count js
+        <!--alert("button1")-->
+        <!--$('#b1,#b3,b4').hide();-->
+                $('#reboot-bar-chart,#crash-bar-chart,#memory-line-chart,#cpu-line-chart').remove();
+                $('#div1').append('<canvas id="cpu-line-chart"><canvas>');
+                $('#div2').append('<canvas id="reboot-bar-chart"><canvas>');
+                $('#div3').append('<canvas id="crash-bar-chart"><canvas>');
+                $('#div4').append('<canvas id="memory-line-chart"><canvas>');
+
+
+        new Chart(document.getElementById("reboot-bar-chart"), {
+        type: 'bar',
+        data: {
+          datasets: [
+            {
+              label: "Reboot Count",
+              backgroundColor: {{ bg_color_reboot_week|safe }},
+              data: {{ device_reboot_week }}
+            }
+          ],
+          labels: {{ device_ips_week|safe }}
+        },
+        options: {
+          legend: { display: false },
+          title: {
+            display: true,
+            text: 'Device Reboot Count'
+          }
+        }
+        });
+        //Crash Count js
+        new Chart(document.getElementById("crash-bar-chart"), {
+        type: 'bar',
+        data: {
+          datasets: [
+            {
+              label: "Crash Count",
+              backgroundColor: {{ bg_color_cpu_week|safe }},
+              data: {{ device_crash_week }}
+            }
+          ],
+          labels: {{ device_ips_week|safe }}
+        },
+        options: {
+          legend: { display: false },
+          title: {
+            display: true,
+            text: 'Device Crash Count'
+          }
+        }
+        });
+        //Memory Statistics
+
+        var memoryData = {
+          labels: {{ week_date_list|safe }},
+          datasets: {{ memory_values_week|safe }}
+        };
+        var memoryChartOptions = {
+            legend: {
+                display: true,
+                position: 'top',
+                labels: {
+                    boxWidth: 80,
+                    fontColor: 'black'
+                }
+            },
+            title: {
+              display: true,
+                text: 'Device Memory in mb'
+          }
+        };
+        new Chart(document.getElementById("memory-line-chart"), {
+          type: 'line',
+          data: memoryData,
+          options: memoryChartOptions
+        });
+        //CPU charts
+          var cpuData = {
+          labels: {{ week_date_list|safe }},
+          datasets: {{ cpu_values_week|safe }}
+        };
+        var cpuChartOptions = {
+            legend: {
+                display: true,
+                position: 'top',
+                labels: {
+                    boxWidth: 80,
+                    fontColor: 'black'
+                }
+            },
+            title: {
+              display: true,
+                text: 'CPU usage'
+          }
+
+        };
+        new Chart(document.getElementById("cpu-line-chart"), {
+          type: 'line',
+          data: cpuData,
+          options: cpuChartOptions
+        });
+    });
+});
+</script>
+            <script id="b3" type="text/javascript">
+                $(function() {
+                $( "#button2" ).click(function() {
+                    //Reboot Count js
+                    <!--alert("button2")-->
+                    <!--$('#b1,#b2,#b4').hide();-->
+                $('#reboot-bar-chart,#crash-bar-chart,#memory-line-chart,#cpu-line-chart').remove();
+                $('#div1').append('<canvas id="cpu-line-chart"><canvas>');
+                $('#div2').append('<canvas id="reboot-bar-chart"><canvas>');
+                $('#div3').append('<canvas id="crash-bar-chart"><canvas>');
+                $('#div4').append('<canvas id="memory-line-chart"><canvas>');
+
+                    new Chart(document.getElementById("reboot-bar-chart"), {
+                    type: 'bar',
+                    data: {
+                      datasets: [
+                        {
+                          label: "Reboot Count",
+                          backgroundColor: {{ bg_color_reboot_selected|safe }},
+                          data: {{ device_reboot_selected }}
+                        }
+                      ],
+                      labels: {{ device_ips_selected|safe }}
+                    },
+                    options: {
+                      legend: { display: false },
+                      title: {
+                        display: true,
+                        text: 'Device Reboot Count'
+                      }
+                    }
+                    });
+                    //Crash Count js
+                    new Chart(document.getElementById("crash-bar-chart"), {
+                    type: 'bar',
+                    data: {
+                      datasets: [
+                        {
+                          label: "Crash Count",
+                          backgroundColor: {{ bg_color_cpu_selected|safe }},
+                          data: {{ device_crash_selected }}
+                        }
+                      ],
+                      labels: {{ device_ips_selected|safe }}
+                    },
+                    options: {
+                      legend: { display: false },
+                      title: {
+                        display: true,
+                        text: 'Device Crash Count'
+                      }
+                    }
+                    });
+                    //Memory Statistics
+
+                    var memoryData = {
+                      labels: {{ date_list|safe }},
+                      datasets: {{ memory_values_selected|safe }}
+                    };
+                    var memoryChartOptions = {
+                        legend: {
+                            display: true,
+                            position: 'top',
+                            labels: {
+                                boxWidth: 80,
+                                fontColor: 'black'
+                            }
+                        },
+                        title: {
+                          display: true,
+                            text: 'Device Memory in mb'
+                      }
+                    };
+                    new Chart(document.getElementById("memory-line-chart"), {
+                      type: 'line',
+                      data: memoryData,
+                      options: memoryChartOptions
+                    });
+                    //CPU charts
+                      var cpuData = {
+                      labels: {{ date_list|safe }},
+                      datasets: {{ cpu_values_selected|safe }}
+                    };
+                    var cpuChartOptions = {
+                        legend: {
+                            display: true,
+                            position: 'top',
+                            labels: {
+                                boxWidth: 80,
+                                fontColor: 'black'
+                            }
+                        },
+                        title: {
+                          display: true,
+                            text: 'CPU usage'
+                      }
+
+                    };
+                    new Chart(document.getElementById("cpu-line-chart"), {
+                      type: 'line',
+                      data: cpuData,
+                      options: cpuChartOptions
+                    });
+                });
+            });
+            </script>
+            <script id="b4" type="text/javascript">
+                $(function() {
+                $( "#button3" ).click(function() {
+                    //Reboot Count js
+                $('#reboot-bar-chart,#crash-bar-chart,#memory-line-chart,#cpu-line-chart').remove();
+                $('#div1').append('<canvas id="cpu-line-chart"><canvas>');
+                $('#div2').append('<canvas id="reboot-bar-chart"><canvas>');
+                $('#div3').append('<canvas id="crash-bar-chart"><canvas>');
+                $('#div4').append('<canvas id="memory-line-chart"><canvas>');
+
+                    <!--alert("button2")-->
+                    <!--$('#b1,#b2,#b3').remove();-->
+                    <!--$('#reboot-bar-chart,#crash-bar-chart,#memory-line-chart,#cpu-line-chart').remove();-->
+                    <!--$('#reboot-bar-chart,#crash-bar-chart,#memory-line-chart,#cpu-line-chart,#reboot-bar-chart2,#crash-bar-chart2,#memory-line-chart2,#cpu-line-chart2').remove();-->
+                    <!--$('#reboot-bar-chart,#crash-bar-chart,#memory-line-chart,#cpu-line-chart').hide();-->
+                    new Chart(document.getElementById("reboot-bar-chart"), {
+                    type: 'bar',
+                    data: {
+                      datasets: [
+                        {
+                          label: "Reboot Count",
+                          backgroundColor: {{ bg_color_reboot_day|safe }},
+                          data: {{ device_reboot_day }}
+                        }
+                      ],
+                      labels: {{ device_ips_day|safe }}
+                    },
+                    options: {
+                      legend: { display: false },
+                      title: {
+                        display: true,
+                        text: 'Device Reboot Count'
+                      }
+                    }
+                    });
+                    //Crash Count js
+                    new Chart(document.getElementById("crash-bar-chart"), {
+                    type: 'bar',
+                    data: {
+                      datasets: [
+                        {
+                          label: "Crash Count",
+                          backgroundColor: {{ bg_color_cpu_day|safe }},
+                          data: {{ device_crash_day }}
+                        }
+                      ],
+                      labels: {{ device_ips_day|safe }}
+                    },
+                    options: {
+                      legend: { display: false },
+                      title: {
+                        display: true,
+                        text: 'Device Crash Count'
+                      }
+                    }
+                    });
+                    //Memory Statistics
+
+                    var memoryData = {
+                      labels: {{ one_day_list|safe }},
+                      datasets: {{ memory_values_day|safe }}
+                    };
+                    var memoryChartOptions = {
+                        legend: {
+                            display: true,
+                            position: 'top',
+                            labels: {
+                                boxWidth: 80,
+                                fontColor: 'black'
+                            }
+                        },
+                        title: {
+                          display: true,
+                            text: 'Device Memory in mb'
+                      }
+                    };
+                    new Chart(document.getElementById("memory-line-chart"), {
+                      type: 'line',
+                      data: memoryData,
+                      options: memoryChartOptions
+                    });
+                    //CPU charts
+                      var cpuData = {
+                      labels: {{ one_day_list|safe }},
+                      datasets: {{ cpu_values_day|safe }}
+                    };
+                    var cpuChartOptions = {
+                        legend: {
+                            display: true,
+                            position: 'top',
+                            labels: {
+                                boxWidth: 80,
+                                fontColor: 'black'
+                            }
+                        },
+                        title: {
+                          display: true,
+                            text: 'CPU usage'
+                      }
+
+                    };
+                    new Chart(document.getElementById("cpu-line-chart"), {
+                      type: 'line',
+                      data: cpuData,
+                      options: cpuChartOptions
+                    });
+                });
+            });
+            </script>
+    {% endblock %}
