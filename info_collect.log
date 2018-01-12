@@ -1,0 +1,3151 @@
+time show
+
+     Time : 20:31:53 
+     Date : 01/08/2018 
+   Source : RTC 
+
+    Persistence is Disabled
+    Standard Time = UTC -5:00
+    Daylight Saving Time is Disabled
+
+MagnumDX# system show info
+
+                 Name : System Name 
+             Location : System Location 
+              Contact : System Contact 
+               OpMode : Normal 
+               Prompt : MagnumDX 
+        TCP Keepalive : 15 
+          Description : DX940e v1.0.0 (B12) 
+        Serial Number : 670400535 
+             Licenses : SECURE+ADVAR 
+        Upgrade State : UPGRADED 
+Management IP Address : 192.168.1.2 
+   System MAC Address : 00:20:61:17:F8:90 
+           Free Space : 45998 
+        System Uptime : 3 days, 20 hours, 6 minutes 
+
+MagnumDX# system show status
+
+         System CPU Utilization : 54% 
+      System Memory Utilization : 5% 
+Ethernet-CPU Buffer Utilization : 0% 
+          Ethernet-CPU Rx Drops : 0 
+
+MagnumDX# service trouble
+
+Task list:
+
+  NAME         ENTRY       TID    PRI   STATUS      PC       SP     ERRNO  DELAY
+
+----------  ------------ -------- --- ---------- -------- -------- ------- -----
+
+tIsr0       7f5fec        18a7900   0 PEND         cfbb78  1b95f60       0     0
+
+tJobTask    b3ec3c        18ab950   0 PEND         cfbb78  1b9cf50       0     0
+
+tExcTask    b3d6ac        1675390   0 PEND         cfbb78  1675290       0     0
+
+tLogTask    logTask       18b1a30   0 PEND         cf9e70  1ba9ed0       0     0
+
+tCM         56ff18        2ccbbf0   0 PEND         cf9e70  2dbe9e0       0     0
+
+tShell0     shellTask     213f670   1 DELAY        d02cc8  25d4ef0       0     1
+
+tSWX        dsSwxTask     2653cf0   1 PEND         cf9e70  208ae00  1c0001     0
+
+tCMrestart  5703b8        467e290   1 PEND         cf9e70  4697c10 3520001     0
+
+PADTimer    padTimerThr>  268f460   4 PEND         cfbb78  167df40       0     0
+
+tPADrx0     padTask       16819d0   4 PEND         cf9e70  2616f10       0     0
+
+tPADtx0     padTask       2614090   4 PEND         cf9e70  261cf10       0     0
+
+tPADrx1     padTask       167b030   4 PEND         cf9e70  2cb7f10       0     0
+
+tPADtx1     padTask       167b310   4 PEND         cf9e70  2ccdf10       0     0
+
+tPADrx2     padTask       2ccb0d0   4 PEND         cf9e70  2d2bf10       0     0
+
+tPADtx2     padTask       2ccb3b0   4 PEND         cf9e70  2d41f10       0     0
+
+tPADrx3     padTask       2d29c90   4 PEND         cf9e70  2d9ff10       0     0
+
+tPADtx3     padTask       2ccb690   4 PEND         cf9e70  2db5f10       0     0
+
+tAlfESIO    alfEsioTask   25f0150   5 PEND         cf9e70  267cf20       0     0
+
+UTS         4f99c0        2869190   6 PEND+T       cfbb78  2878380  3d0004  3599
+
+tETS_io     4ca938        4674100   6 PEND+T       cfbb78  4679bd0  3d0004    13
+
+tErfTask    80b79c        18af4f0  10 PEND         cfc364  1ba2f40       0     0
+
+tPhy1Int    phy1IntTask   18a9250  10 PEND         cf9e70  263af10       0     0
+
+tPhy2Int    phy2IntTask   2090000  10 PEND         cf9e70  25ecf10       0     0
+
+tPhy3Int    phy3IntTask   20902e0  10 PEND         cf9e70  25f2f10       0     0
+
+ipcom_tick> 8b1ec4        213d5c0  20 PEND+T       cfbb78  20eff20       0   601
+
+tSSHCli0    SSH_DS_Proc>  294b680  20 PEND         cf9e70  2987c10       0     0
+
+tSSHCli1    SSH_DS_Proc>  294ecf0  20 PEND         cf9e70  298fc10       0     0
+
+tSSHCli2    SSH_DS_Proc>  294bae0  20 PEND         cf9e70  2997c10       0     0
+
+tSSHCli3    SSH_DS_Proc>  29540d0  20 PEND         cf9e70  29a2c10       0     0
+
+tSSHCli4    SSH_DS_Proc>  29490d0  20 PEND         cf9e70  29adc10       0     0
+
+tSSHCli5    SSH_DS_Proc>  2949530  20 PEND         cf9e70  29b8c10       0     0
+
+tSSHCli6    SSH_DS_Proc>  2964010  20 PEND         cf9e70  29c3c10       0     0
+
+tSSHCli7    SSH_DS_Proc>  29643c0  20 PEND         cf9e70  29cec10       0     0
+
+tVxdbgTask  79beb8        2126bf0  25 PEND         cfbb78  25bdf00       0     0
+
+tGOOSE      46de7c        42df880  30 PEND+T       cfbb78  446e5c0  3d0004 11493
+5
+tConsole    RCC_TELNETD>  44fe920  42 PEND+T       cfbb78  46bf800  3d0004  2902
+
+tRSTP       4b380c        2826b60  45 DELAY        d02cc8  2829f70       0    42
+
+tDns        dsDnsTask     286a970  47 PEND         cf9e70  2883f00       0     0
+
+tSNMP       dsSnmpTask    28660d0  47 PEND         cf9e70  288fe80       0     0
+
+tRadMngr    dsRadTask     28869c0  47 PEND         cf9e70  289ff00       0     0
+
+tIPsec      dsIpSecTask   29d0010  47 PEND         cf9e70  42e8dc0      31     0
+
+tETS_chan   dsEtsChanTa>  4552ce0  48 PEND+T       cfbb78  4576cd0  3d0004    48
+
+tNet0       ipcomNetTask  18c7c40  50 PEND         cfbb78  1be5f20       0     0
+
+ipcom_sysl> 8b5158        195eca0  50 PEND         cfc364  1bdce50       0     0
+
+tNetConf    a246b8        1bc36b0  50 PEND         cfbb78  213bda0       0     0
+
+iptftps     88f23c        1bb6b90  50 PEND         cfbb78  20f8ec0  380003     0
+
+ipdhcps     987174        20e40e0  50 PEND+T       cfbb78  20fdaa0      31    66
+
+ipdhcpc     8a5838        1b851f0  50 PEND+T       cfbb78  210ac60  3d0004     3
+
+ipiked      ipike_proc    21042f0  50 PEND+T       cfbb78  2117900  3d0004    13
+
+Type <CR> to continue, Q<CR> to stop: bcmDPC      f7cd80        1b80a50  50 PEND
+         cfbb78  25fdf00       0     0
+tIKEEventR> 9fe1e0        29af5f0  50 PEND         cfbb78  42edd60      44     0
+
+tMbus       dsMbTask      29ecc20  51 PEND+T       cfbb78  430acc0  3d0004    33
+
+tDHCPc      dsDhcpcTask   296e860  65 PEND         cf9e70  2975dd0  c70000     0
+
+tTelnetd    63917c        44f0920  65 PEND         cfbb78  46d1da0  7c0006     0
+
+tTelnet625> RCC_TELNET_>  5d09b80  65 PEND         cfbb78  5d5ae00  7c0006     0
+
+bcmTX       ebfb38        2697590  70 PEND         cfbb78  26ddef0       0     0
+
+tCciTask    cciTask       213fa20  75 PEND         cfbb78  2774f50       0     0
+
+tSYSLOG     4d8998        29ec820  75 PEND+T       cf9e70  44cbb50  3d0004   254
+
+ipripd      ipripd        213f390  80 PEND         cfbb78  2102c10       6     0
+
+pppMgmtTas> 54a89c        295c5c0  85 PEND         cf9e70  29eab60       0     0
+
+tESW        441728        29466e0  90 PEND         cf9e70  2959ef0      31     0
+
+tTffsPTask  flPollTask    18b3230 100 DELAY        d02cc8  1bb0f60  3d0002     5
+
+tTffsSvc:0  c9c708        1baeae0 100 PEND         cfbb78  1bbff30       0     0
+
+EHCD_IH0    usbEhcdInte>  195acb0 100 PEND         cfbb78  2651f50       0     0
+
+BusM A      cc1040        2653890 100 DELAY        d02cc8  2658f60       0     1
+
+tSess       496598        29409b0 100 PEND         cf9e70  2942d10       0     0
+
+mocSshMn    b05934        294d010 100 PEND+T       cfbb78  2962e30  3d0004    18
+
+tSSHPortFw> SSH_DS_port>  2954b90 100 PEND         cfbb78  297dd50       0     0
+
+tSER        dsSerTask     2970720 100 DELAY        d02cc8  2969f60       0    14
+
+tETH        4844d4        295c2e0 100 PEND+T       cf9e70  29dde00  3d0004    57
+
+tSNTP       4fc9e0        29af180 100 DELAY        d02cc8  29f5e00       0    44
+
+tMbMgmt     dsMbMgmtTask  29e1c20 100 PEND+T       cfbb78  4303de0  3d0004    17
+
+tBackplane  wmbBackplan>  462a5b0 101 PEND         cf9e70  469ede0       0     0
+
+mud1_t0     675df0        4528920 101 PEND         cfc364  47dee20  3d0004     0
+
+mud1_t1     675df0        4544920 101 PEND+T       cfbb78  47ebdb0  3d0004 16722
+
+mud1_t2     675df0        29d8860 101 PEND         cfc364  47f8e20  3d0004     0
+
+mud1_t3     675df0        451a220 101 PEND         cfc364  4805e20  3d0004     0
+
+mud1_t4     675df0        4674710 101 PEND         cfc364  4812e20  3d0004     0
+
+multiAsync> ebd158        2697970 110 PEND         cfc364  26e4ea0       0     0
+
+tReadEsc62> 64e768        5bce550 110 PEND+T       cfbb78  5d3ed90       0  1785
+
+tExecHandl> 64e8b4        5bcd9a0 110 READY        d03e68  5c5a310       9     0
+
+bcmARL.0    ff1bdc        25dc010 120 READY        cfbb78  269ce70  3d0004     0
+
+tCOUNTER.0  soc_robo_co>  25dc4b0 120 PEND+T       cfbb78  26d6ee0  3d0004    95
+
+tSnmpd      cf4354        25d6b00 150 PEND         cfbb78  25e4d50      33     0
+
+tTRC        dsTrcTask     2d9d5d0 150 PEND         cf9e70  2dc4d10       0     0
+
+tBgpTimer   52a198        29fe2f0 150 DELAY        d02cc8  4465ef0       0   151
+
+tXbdServic> be34d0        1bba2e0 200 PEND         cfbb78  1bc5f50       0     0
+
+tSnmpTmr    cf3d90        25d66a0 200 PEND         cf9e70  25daef0       0     0
+
+tLOG        dsLogTask     29f7410 200 PEND+T       cf9e70  44bde80  3d0002     6
+
+tLOGr       dsLogRateLi>  29f77c0 200 DELAY        d02cc8  44c4f50       0     3
+
+tPrtSec     43eb08        213d010 225 PEND         cf9e70  29d4f00       0     0
+
+tSSLc_0     dsEtsSSLWor>  29ba500 230 PEND+T       cfbb78  44d9cf0  3d0004     5
+
+tSSLc_1     dsEtsSSLWor>  29ec500 230 PEND+T       cfbb78  44e7cf0  3d0004     5
+
+tSSLc_2     dsEtsSSLWor>  42dfb60 230 PEND+T       cfbb78  44f5cf0  3d0004     4
+
+tSSLc_3     dsEtsSSLWor>  42ef010 230 PEND+T       cfbb78  4503cf0  3d0004     4
+
+tSSLc_4     dsEtsSSLWor>  44d4ce0 230 PEND+T       cfbb78  4511cf0  3d0004     4
+
+tSSLs_0     dsEtsSSLWor>  44e2ce0 230 PEND+T       cfbb78  451fcf0  3d0004     4
+
+tSSLs_1     dsEtsSSLWor>  44f0ce0 230 PEND+T       cfbb78  452dcf0  3d0004     3
+
+tSSLs_2     dsEtsSSLWor>  44fece0 230 PEND+T       cfbb78  453bcf0  3d0004     3
+
+Type <CR> to continue, Q<CR> to stop: tSSLs_3     dsEtsSSLWor>  451ace0 230 PEND
++T       cfbb78  4549cf0  3d0004     3
+tSSLs_4     dsEtsSSLWor>  4528ce0 230 PEND+T       cfbb78  4557cf0  3d0004     3
+
+tCpuUsage   dsCpuUtilId>  4673470 255 DELAY        d02cc8  468eef0       4  5960
+
+
+Stack usage check:
+  NAME        ENTRY        TID       SIZE   CUR  HIGH  MARGIN
+------------ ------------ ---------- ----- ----- ----- ------
+tIsr0        0x7f5fec     0x18a7900   8192   160   368   7824 
+(Exception Stack)                     3920     0   160   3760 
+tJobTask     0xb3ec3c     0x18ab950   8192   176   672   7520 
+(Exception Stack)                     3920     0   336   3584 
+tExcTask     0xb3d6ac     0x1675390   8192   256   624   7568 
+(Exception Stack)                     3920     0   160   3760 
+tLogTask     logTask      0x18b1a30   8192   304   336   7856 
+(Exception Stack)                     3920     0    96   3824 
+tCM          0x56ff18     0x2ccbbf0  16384  1568  2752  13632 
+(Exception Stack)                     3920     0   160   3760 
+tShell0      shellTask    0x213f670  65536   272  1408  64128 
+(Exception Stack)                     3744     0   160   3584 
+tSWX         dsSwxTask    0x2653cf0  20480   512  2896  17584 
+(Exception Stack)                     3920     0   160   3760 
+tCMrestart   0x5703b8     0x467e290  16384  1008  7776   8608 
+(Exception Stack)                     3920     0    96   3824 
+PADTimer     padTimerThre 0x268f460   4096   192   752   3344 
+(Exception Stack)                     3920     0   576   3344 
+tPADrx0      padTask      0x16819d0   4096   240   768   3328 
+(Exception Stack)                     3920     0   576   3344 
+tPADtx0      padTask      0x2614090   4096   240   272   3824 
+(Exception Stack)                     3920     0    96   3824 
+tPADrx1      padTask      0x167b030   4096   240   768   3328 
+(Exception Stack)                     3920     0   576   3344 
+tPADtx1      padTask      0x167b310   4096   240   272   3824 
+(Exception Stack)                     3920     0    96   3824 
+tPADrx2      padTask      0x2ccb0d0   4096   240   528   3568 
+(Exception Stack)                     3920     0   576   3344 
+tPADtx2      padTask      0x2ccb3b0   4096   240   272   3824 
+(Exception Stack)                     3920     0    96   3824 
+tPADrx3      padTask      0x2d29c90   4096   240   496   3600 
+(Exception Stack)                     3920     0   576   3344 
+tPADtx3      padTask      0x2ccb690   4096   240   272   3824 
+(Exception Stack)                     3920     0    96   3824 
+tAlfESIO     alfEsioTask  0x25f0150  32768   224   368  32400 
+(Exception Stack)                     3920     0    96   3824 
+UTS          0x4f99c0     0x2869190  16384  3200  4128  12256 
+(Exception Stack)                     3920     0   160   3760 
+tETS_io      0x4ca938     0x4674100  16384  1072  2000  14384 
+(Exception Stack)                     3920     0   160   3760 
+tErfTask     0x80b79c     0x18af4f0   4096   192  1424   2672 
+(Exception Stack)                     3728     0    96   3632 
+tPhy1Int     phy1IntTask  0x18a9250   4096   240   288   3808 
+(Exception Stack)                     3728     0    96   3632 
+tPhy2Int     phy2IntTask  0x2090000   4096   240   416   3680 
+(Exception Stack)                     3728     0   192   3536 
+tPhy3Int     phy3IntTask  0x20902e0   4096   240   368   3728 
+(Exception Stack)                     3728     0   160   3568 
+ipcom_tickd  0x8b1ec4     0x213d5c0   8192   224  1328   6864 
+(Exception Stack)                     3920     0   160   3760 
+tSSHCli0     SSH_DS_Proce 0x294b680  20480  1008  1040  19440 
+(Exception Stack)                     3920     0    96   3824 
+tSSHCli1     SSH_DS_Proce 0x294ecf0  20480  1008  1040  19440 
+(Exception Stack)                     3920     0    96   3824 
+tSSHCli2     SSH_DS_Proce 0x294bae0  20480  1008  1040  19440 
+(Exception Stack)                     3920     0    96   3824 
+tSSHCli3     SSH_DS_Proce 0x29540d0  20480  1008  1040  19440 
+(Exception Stack)                     3920     0    96   3824 
+tSSHCli4     SSH_DS_Proce 0x29490d0  20480  1008  1040  19440 
+(Exception Stack)                     3920     0    96   3824 
+tSSHCli5     SSH_DS_Proce 0x2949530  20480  1008  1040  19440 
+(Exception Stack)                     3920     0    96   3824 
+tSSHCli6     SSH_DS_Proce 0x2964010  20480  1008  1040  19440 
+(Exception Stack)                     3920     0    96   3824 
+tSSHCli7     SSH_DS_Proce 0x29643c0  20480  1008  1040  19440 
+(Exception Stack)                     3920     0    96   3824 
+tVxdbgTask   0x79beb8     0x2126bf0   8192   256   304   7888 
+(Exception Stack)                     3728     0    96   3632 
+tGOOSE       0x46de7c     0x42df880  16384  2624  3552  12832 
+(Exception Stack)                     3744     0    96   3648 
+tConsole     RCC_TELNETD_ 0x44fe920  16384  2048  6272  10112 
+(Exception Stack)                     3744     0   160   3584 
+tRSTP        0x4b380c     0x2826b60   8192   144  1760   6432 
+(Exception Stack)                     3920     0   160   3760 
+tDns         dsDnsTask    0x286a970  32768   256   768  32000 
+(Exception Stack)                     3920     0   160   3760 
+tSNMP        dsSnmpTask   0x28660d0  32768   384   752  32016 
+(Exception Stack)                     3920     0    96   3824 
+tRadMngr     dsRadTask    0x28869c0  32768   256   624  32144 
+(Exception Stack)                     3920     0    96   3824 
+tIPsec       dsIpSecTask  0x29d0010  32768   576  4896  27872 
+(Exception Stack)                     3744     0   576   3168 
+tETS_chan    dsEtsChanTas 0x4552ce0  16384   816  3232  13152 
+(Exception Stack)                     3920     0   160   3760 
+tNet0        ipcomNetTask 0x18c7c40  12288   224  7264   5024 
+(Exception Stack)                     3920     0   576   3344 
+ipcom_syslog 0x8b5158     0x195eca0   8192   432  1040   7152 
+(Exception Stack)                     3920     0   192   3728 
+tNetConf     0xa246b8     0x1bc36b0   8192   608  1680   6512 
+(Exception Stack)                     3920     0   192   3728 
+iptftps      0x88f23c     0x1bb6b90   8192   320  1312   6880 
+(Exception Stack)                     3920     0    96   3824 
+ipdhcps      0x987174     0x20e40e0   8192  1376  1904   6288 
+(Exception Stack)                     3920     0   576   3344 
+ipdhcpc      0x8a5838     0x1b851f0  12288   928  2112  10176 
+(Exception Stack)                     3920     0   336   3584 
+ipiked       ipike_proc   0x21042f0  32768  1792  3312  29456 
+(Exception Stack)                     3728     0   336   3392 
+bcmDPC       0xf7cd80     0x1b80a50  16384   256   288  16096 
+(Exception Stack)                     3728     0    96   3632 
+tIKEEventRec 0x9fe1e0     0x29af5f0   8192   672  1792   6400 
+(Exception Stack)                     3728     0    96   3632 
+tMbus        dsMbTask     0x29ecc20   8192   832  2496   5696 
+(Exception Stack)                     3728     0   160   3568 
+tDHCPc       dsDhcpcTask  0x296e860  16384   560  2336  14048 
+(Exception Stack)                     3920     0   160   3760 
+tTelnetd     0x63917c     0x44f0920  53248   608  1504  51744 
+(Exception Stack)                     3744     0   192   3552 
+tTelnet6252  RCC_TELNET_S 0x5d09b80  53248   512  6272  46976 
+(Exception Stack)                     3744     0   160   3584 
+bcmTX        0xebfb38     0x2697590  16384   272   304  16080 
+(Exception Stack)                     3728     0    96   3632 
+tCciTask     cciTask      0x213fa20  20480   176   208  20272 
+(Exception Stack)                     3920     0    96   3824 
+tSYSLOG      0x4d8998     0x29ec820   8192  1200  2224   5968 
+(Exception Stack)                     3920     0   160   3760 
+ipripd       ipripd       0x213f390   8192  1008  2048   6144 
+(Exception Stack)                     3920     0   576   3344 
+pppMgmtTask  0x54a89c     0x295c5c0  32768  1184  1968  30800 
+(Exception Stack)                     3920     0    96   3824 
+tESW         0x441728     0x29466e0  16384   272  2176  14208 
+(Exception Stack)                     3728     0   336   3392 
+tTffsPTask   flPollTask   0x18b3230   4096   160   560   3536 
+(Exception Stack)                     3920     0   160   3760 
+tTffsSvc:0   0xc9c708     0x1baeae0  16384   208   592  15792 
+(Exception Stack)                     3920     0   320   3600 
+EHCD_IH0     usbEhcdInter 0x195acb0   8192   176   224   7968 
+(Exception Stack)                     3920     0    96   3824 
+BusM A       0xcc1040     0x2653890   8192   160   304   7888 
+(Exception Stack)                     3920     0   336   3584 
+tSess        0x496598     0x29409b0   4096   752  2240   1856 
+(Exception Stack)                     3920     0   160   3760 
+mocSshMn     0xb05934     0x294d010  20480   464  1904  18576 
+(Exception Stack)                     3744     0   160   3584 
+tSSHPortFwdT SSH_DS_portF 0x2954b90  16384  8880  9808   6576 
+(Exception Stack)                     3920     0    96   3824 
+tSER         dsSerTask    0x2970720   8192   160   960   7232 
+(Exception Stack)                     3920     0   304   3616 
+tETH         0x4844d4     0x295c2e0  16384   512  2608  13776 
+(Exception Stack)                     3728     0   160   3568 
+tSNTP        0x4fc9e0     0x29af180   8192   512   960   7232 
+(Exception Stack)                     3920     0   160   3760 
+tMbMgmt      dsMbMgmtTask 0x29e1c20  32768   544  1472  31296 
+(Exception Stack)                     3728     0   160   3568 
+tBackplane   wmbBackplane 0x462a5b0   8192   544  1120   7072 
+(Exception Stack)                     3744     0    96   3648 
+mud1_t0      0x675df0     0x4528920  32768   480  5232  27536 
+(Exception Stack)                     3744     0   160   3584 
+mud1_t1      0x675df0     0x4544920  32768   592  4032  28736 
+(Exception Stack)                     3744     0   160   3584 
+mud1_t2      0x675df0     0x29d8860  32768   480  3920  28848 
+(Exception Stack)                     3744     0   160   3584 
+mud1_t3      0x675df0     0x451a220  32768   480  4032  28736 
+(Exception Stack)                     3744     0   160   3584 
+mud1_t4      0x675df0     0x4674710  32768   480  3920  28848 
+(Exception Stack)                     3744     0   160   3584 
+multiAsyncTX 0xebd158     0x2697970  16384   352   384  16000 
+(Exception Stack)                     3728     0    96   3632 
+tReadEsc6252 0x64e768     0x5bce550   4096   624  1040   3056 
+(Exception Stack)                     3744     0   160   3584 
+tExecHandler 0x64e8b4     0x5bcd9a0  53248  2800  3936  49312 
+(Exception Stack)                     3744     0   160   3584 
+bcmARL.0     0xff1bdc     0x25dc010  16384   400  2256  14128 
+(Exception Stack)                     3728     0   576   3152 
+tCOUNTER.0   soc_robo_cou 0x25dc4b0  16384   288  1504  14880 
+(Exception Stack)                     3728     0   576   3152 
+tSnmpd       0xcf4354     0x25d6b00  28672  8880  9808  18864 
+(Exception Stack)                     3920     0    96   3824 
+tTRC         dsTrcTask    0x2d9d5d0   4096   752  1264   2832 
+(Exception Stack)                     3920     0    96   3824 
+tBgpTimer    0x52a198     0x29fe2f0  32768   272   624  32144 
+(Exception Stack)                     3920     0   160   3760 
+tXbdService  0xbe34d0     0x1bba2e0   4096   176   944   3152 
+(Exception Stack)                     3920     0   336   3584 
+tSnmpTmr     0xcf3d90     0x25d66a0   4096   272   320   3776 
+(Exception Stack)                     3920     0    96   3824 
+tLOG         dsLogTask    0x29f7410   8192   384  2640   5552 
+(Exception Stack)                     3920     0   336   3584 
+tLOGr        dsLogRateLim 0x29f77c0   8192   176   624   7568 
+(Exception Stack)                     3920     0   384   3536 
+tPrtSec      0x43eb08     0x213d010   4096   256   720   3376 
+(Exception Stack)                     3920     0    96   3824 
+tSSLc_0      dsEtsSSLWork 0x29ba500  16384   784  1600  14784 
+(Exception Stack)                     3744     0   336   3408 
+tSSLc_1      dsEtsSSLWork 0x29ec500  16384   784  1600  14784 
+(Exception Stack)                     3744     0   160   3584 
+tSSLc_2      dsEtsSSLWork 0x42dfb60  16384   784  1664  14720 
+(Exception Stack)                     3744     0   192   3552 
+tSSLc_3      dsEtsSSLWork 0x42ef010  16384   784  1600  14784 
+(Exception Stack)                     3744     0   272   3472 
+tSSLc_4      dsEtsSSLWork 0x44d4ce0  16384   784  1712  14672 
+(Exception Stack)                     3744     0   304   3440 
+tSSLs_0      dsEtsSSLWork 0x44e2ce0  16384   784  1712  14672 
+(Exception Stack)                     3744     0   160   3584 
+tSSLs_1      dsEtsSSLWork 0x44f0ce0  16384   784  1712  14672 
+(Exception Stack)                     3744     0   176   3568 
+tSSLs_2      dsEtsSSLWork 0x44fece0  16384   784  1712  14672 
+(Exception Stack)                     3744     0   160   3584 
+tSSLs_3      dsEtsSSLWork 0x451ace0  16384   784  1712  14672 
+(Exception Stack)                     3744     0   304   3440 
+tSSLs_4      dsEtsSSLWork 0x4528ce0  16384   784  1712  14672 
+(Exception Stack)                     3744     0   320   3424 
+tCpuUsage    dsCpuUtilIdl 0x4673470   8192   496  2208   5984 
+(Exception Stack)                     3728     0   320   3408 
+INTERRUPT                             8192     0  1104   7088 
+
+LIST OF FREE BLOCKS:
+	 number      size
+	--------  ----------
+	      55          32
+	     106          48
+	     151          64
+	     123          80
+	      91          96
+	      76         112
+	      15         128
+	       2         144
+	       4         176
+	       4         192
+	       8         208
+	       1         224
+	       1         272
+	       1         304
+	       1         560
+	       1         944
+	       1        1200
+	       1        1424
+	       1        1472
+	       1        1872
+	       1        2208
+	       1        2592
+	       1        3104
+	       1        3392
+	       1        4176
+	       1        7040
+	       3        8192
+	       2        8208
+	       3       12304
+	       1       12336
+	       1       12352
+	       2       12384
+	       1       12400
+	       1       12416
+	       1       12480
+	       1       12496
+	       3       12512
+	       2       13040
+	       1       13104
+	       1       13776
+	       1       13936
+	       1       14320
+	       1       14512
+	       1       15280
+	       1       15936
+	       1       15984
+	       1       16016
+	       1       20400
+	       6       20496
+	       1       22064
+	       1       24112
+	       2       24336
+	       2       24352
+	       1       24416
+	       1       24432
+	       5       24592
+	       1       24672
+	       1       59632
+	       1       61248
+	       1       61536
+	       3       61664
+	       1       61712
+	       1       61744
+	       1       61760
+	       1       61792
+	       1       62128
+	       1       62400
+	       1       62576
+	       1       62960
+	       1       63104
+	       1       63472
+	       1       63808
+	       1       64048
+	       1       64160
+	       1       64320
+	       1       64528
+	       1       64576
+	       1       64752
+	       1       64832
+	       1       65136
+	       1       65168
+	       2       65184
+	       1       65248
+	       1       65264
+	       1       65536
+	       1      802384
+	       1    84696528
+
+
+OPTIONS:
+	ALLOC_ERROR_LOG
+	ALLOC_ERROR_SUSPEND
+	BLOCK_ERROR_LOG
+	BLOCK_ERROR_SUSPEND
+
+SUMMARY:
+  status       bytes       blocks    avg block  max block
+ -------- -------------- ---------- ---------- ----------
+current
+ free           88398480        734     120433   84696512
+ alloc          74114224     169352        437          -
+ internal           4176         20        208          -
+cumulative
+ alloc       56529125408  318321496        177          -
+peak
+ alloc          75983424          -          -          -
+
+------------------------------------------------------------------------------
+                           Fatal Software Exceptions
+------------------------------------------------------------------------------
+
+No records.
+
+
+------------------------------------------------------------------------------
+                         Non-Fatal Software Exceptions
+------------------------------------------------------------------------------
+
+No records.
+
+
+------------------------------------------------------------------------------
+                                Software Errors
+------------------------------------------------------------------------------
+
+==============================================================================
+Record #52 - Created Jan 08 19:05:45 2018 VERSION: DX940e v1.0.0 (B12)
+
+==============================================================================
+
+SOFTWARE ERROR: setOspf(0xC2F7D0): commit failed
+
+FILE: /home/build/workspace/vxworks-6.9/vector/apps/ospf/dsOspfData.c, LINE: 184
+8
+
+
+  NAME         ENTRY       TID    PRI   STATUS      PC       SP     ERRNO  DELAY
+
+----------  ------------ -------- --- ---------- -------- -------- ------- -----
+
+tExecHandl> 64e8b4        5bda0b0 110 SUSPEND      cfa364  5efb810       9     0
+
+
+full task name : tExecHandlerc6111
+task entry     : 64e8b4
+process        : kernel
+options        : 0x4009005
+VX_SUPERVISOR_MODE  VX_DEALLOC_STACK    VX_DEALLOC_TCB      VX_SPE_TASK         
+VX_DEALLOC_EXC_STACK
+
+ STACK      BASE     END       SP      SIZE    HIGH   MARGIN
+--------- -------- -------- -------- ------- ------- -------
+execution  5efc000  5eef000  5efb810   53248    2384   50864
+exception  22f8ea0  22f8000             3744     160    3584
+
+VxWorks Events
+--------------
+Events Pended on    : Not Pended
+Received Events     : 0x0
+Options             : N/A
+
+r0         = 0x00000000   sp         = 0x05efb810   r2         = 0x011d61f0
+r3         = 0x00000000   r4         = 0x00000000   r5         = 0x00000000
+r6         = 0x00000000   r7         = 0x00000000   r8         = 0x00000000
+r9         = 0x00000000   r10        = 0x00000000   r11        = 0x00000000
+r12        = 0x00000000   r13        = 0x0144d6b0   r14        = 0x00000000
+r15        = 0x00000000   r16        = 0x00000000   r17        = 0x00000000
+r18        = 0x00000000   r19        = 0x00000000   r20        = 0x00000001
+r21        = 0x02653cf0   r22        = 0x05bda0b0   r23        = 0x00000000
+r24        = 0x00000000   r25        = 0x01b80190   r26        = 0x00000001
+r27        = 0x00000000   r28        = 0x00000000   r29        = 0x0000010c
+r30        = 0x05efb868   r31        = 0x01b7f000   msr        = 0x02029230
+lr         = 0x00000000   ctr        = 0x00000000   pc         = 0x00cfa364
+cr         = 0x28000244   xer        = 0x00000000   pgTblPtr   = 0x00000000
+asid       = 0x00000001   spefscr    = 0x0000003c
+
+SPE context - Upper 32 bits of GPR
+r0h    =        0   r1h    =        0   r2h    =        0   r3h    =        0
+r4h    =        0   r5h    =        0   r6h    =        0   r7h    =        0
+r8h    =        0   r9h    =        0   r10h   =        0   r11h   =        0
+r12h   =        0   r13h   =        0   r14h   =        0   r15h   =        0
+r16h   =        0   r17h   =        0   r18h   =        0   r19h   =        0
+r20h   =        0   r21h   =        0   r22h   =        0   r23h   =        0
+r24h   =        0   r25h   =        0   r26h   =        0   r27h   =        0
+r28h   =        0   r29h   =        0   r30h   =        0   r31h   =        0
+acch   =        0   accl   =        0   
+
+
+0x0079074c vxTaskEntry  +0x48 : 0x0064e8b4 (0x79074c)
+0x0064e8f4 RCC_TASK_CancelRead+0x218: cliOspfSetProfile ()
+0x0059d95c cliOspfSetProfile+0x1ac: vectorCliIpOspfSetProfile ()
+0x005c2b68 vectorCliIpOspfSetProfile+0x148: dsOspfSetProfilesBox ()
+0x00566f58 dsOspfSetProfilesBox+0xc0 : 0x00565cb4 ()
+0x00565f6c dsOspfSetInterfacesBox+0x5c4: dsOspfSetProfileAuthKey ()
+0x0056b520 dsOspfSetProfileAuthKey+0xb8 : 0x00569980 ()
+0x0056999c dsOspfDeleteArea+0x1c0: 0x0056991c ()
+0x00569968 dsOspfDeleteArea+0x18c: 0x00568ec8 ()
+0x00568f18 dsOspfReleaseData+0x2fc: 0x00568cd4 ()
+0x00568d94 dsOspfReleaseData+0x178: dsSwxError ()
+0x0057b900 dsSwxError   +0x4c : dsSwxPost (0, 0x2, 0x5bda0b0)
+0x0057af40 dsSwxPost    +0x5c : msgQSend ()
+
+
+==============================================================================
+Record #53 - Created Jan 08 19:05:46 2018 VERSION: DX940e v1.0.0 (B12)
+
+==============================================================================
+
+SOFTWARE ERROR: setOspf(0xC2F7D0): commit failed
+
+FILE: /home/build/workspace/vxworks-6.9/vector/apps/ospf/dsOspfData.c, LINE: 184
+8
+
+
+  NAME         ENTRY       TID    PRI   STATUS      PC       SP     ERRNO  DELAY
+
+----------  ------------ -------- --- ---------- -------- -------- ------- -----
+
+tExecHandl> 64e8b4        5bda0b0 110 SUSPEND      cfa364  5efb810       9     0
+
+
+full task name : tExecHandlerc6111
+task entry     : 64e8b4
+process        : kernel
+options        : 0x4009005
+VX_SUPERVISOR_MODE  VX_DEALLOC_STACK    VX_DEALLOC_TCB      VX_SPE_TASK         
+VX_DEALLOC_EXC_STACK
+
+ STACK      BASE     END       SP      SIZE    HIGH   MARGIN
+--------- -------- -------- -------- ------- ------- -------
+execution  5efc000  5eef000  5efb810   53248    2384   50864
+exception  22f8ea0  22f8000             3744     160    3584
+
+VxWorks Events
+--------------
+Events Pended on    : Not Pended
+Received Events     : 0x0
+Options             : N/A
+
+r0         = 0x00000000   sp         = 0x05efb810   r2         = 0x011d61f0
+r3         = 0x00000000   r4         = 0x00000000   r5         = 0x00000000
+r6         = 0x00000000   r7         = 0x00000000   r8         = 0x00000000
+r9         = 0x00000000   r10        = 0x00000000   r11        = 0x00000000
+r12        = 0x00000000   r13        = 0x0144d6b0   r14        = 0x00000000
+r15        = 0x00000000   r16        = 0x00000000   r17        = 0x00000000
+r18        = 0x00000000   r19        = 0x00000000   r20        = 0x00000001
+r21        = 0x02653cf0   r22        = 0x05bda0b0   r23        = 0x00000000
+r24        = 0x00000000   r25        = 0x01b80190   r26        = 0x00000001
+r27        = 0x00000000   r28        = 0x00000000   r29        = 0x0000010c
+r30        = 0x05efb868   r31        = 0x01b7f000   msr        = 0x02029230
+lr         = 0x00000000   ctr        = 0x00000000   pc         = 0x00cfa364
+cr         = 0x28000244   xer        = 0x00000000   pgTblPtr   = 0x00000000
+asid       = 0x00000001   spefscr    = 0x0000003c
+
+SPE context - Upper 32 bits of GPR
+r0h    =        0   r1h    =        0   r2h    =        0   r3h    =        0
+r4h    =        0   r5h    =        0   r6h    =        0   r7h    =        0
+r8h    =        0   r9h    =        0   r10h   =        0   r11h   =        0
+r12h   =        0   r13h   =        0   r14h   =        0   r15h   =        0
+r16h   =        0   r17h   =        0   r18h   =        0   r19h   =        0
+r20h   =        0   r21h   =        0   r22h   =        0   r23h   =        0
+r24h   =        0   r25h   =        0   r26h   =        0   r27h   =        0
+r28h   =        0   r29h   =        0   r30h   =        0   r31h   =        0
+acch   =        0   accl   =        0   
+
+
+0x0079074c vxTaskEntry  +0x48 : 0x0064e8b4 (0x79074c)
+0x0064e8f4 RCC_TASK_CancelRead+0x218: cliOspfSetProfile ()
+0x0059d95c cliOspfSetProfile+0x1ac: vectorCliIpOspfSetProfile ()
+0x005c2b68 vectorCliIpOspfSetProfile+0x148: dsOspfSetProfilesBox ()
+0x00566f58 dsOspfSetProfilesBox+0xc0 : 0x00565cb4 ()
+0x00565f6c dsOspfSetInterfacesBox+0x5c4: dsOspfSetProfileAuthKey ()
+0x0056b520 dsOspfSetProfileAuthKey+0xb8 : 0x00569980 ()
+0x0056999c dsOspfDeleteArea+0x1c0: 0x0056991c ()
+0x00569968 dsOspfDeleteArea+0x18c: 0x00568ec8 ()
+0x00568f18 dsOspfReleaseData+0x2fc: 0x00568cd4 ()
+0x00568d94 dsOspfReleaseData+0x178: dsSwxError ()
+0x0057b900 dsSwxError   +0x4c : dsSwxPost (0, 0x2, 0x5bda0b0)
+0x0057af40 dsSwxPost    +0x5c : msgQSend ()
+
+
+==============================================================================
+Record #54 - Created Jan 08 19:06:16 2018 VERSION: DX940e v1.0.0 (B12)
+
+==============================================================================
+
+SOFTWARE ERROR: setOspf(0xC2F7D0): commit failed
+
+FILE: /home/build/workspace/vxworks-6.9/vector/apps/ospf/dsOspfData.c, LINE: 184
+8
+
+
+  NAME         ENTRY       TID    PRI   STATUS      PC       SP     ERRNO  DELAY
+
+----------  ------------ -------- --- ---------- -------- -------- ------- -----
+
+tExecHandl> 64e8b4        5bda0b0 110 SUSPEND      cfa364  5efb810       9     0
+
+
+full task name : tExecHandlerc6111
+task entry     : 64e8b4
+process        : kernel
+options        : 0x4009005
+VX_SUPERVISOR_MODE  VX_DEALLOC_STACK    VX_DEALLOC_TCB      VX_SPE_TASK         
+VX_DEALLOC_EXC_STACK
+
+ STACK      BASE     END       SP      SIZE    HIGH   MARGIN
+--------- -------- -------- -------- ------- ------- -------
+execution  5efc000  5eef000  5efb810   53248    2384   50864
+exception  22f8ea0  22f8000             3744     160    3584
+
+VxWorks Events
+--------------
+Events Pended on    : Not Pended
+Received Events     : 0x0
+Options             : N/A
+
+r0         = 0x00000000   sp         = 0x05efb810   r2         = 0x011d61f0
+r3         = 0x00000000   r4         = 0x00000000   r5         = 0x00000000
+r6         = 0x00000000   r7         = 0x00000000   r8         = 0x00000000
+r9         = 0x00000000   r10        = 0x00000000   r11        = 0x00000000
+r12        = 0x00000000   r13        = 0x0144d6b0   r14        = 0x00000000
+r15        = 0x00000000   r16        = 0x00000000   r17        = 0x00000000
+r18        = 0x00000000   r19        = 0x00000000   r20        = 0x00000001
+r21        = 0x02653cf0   r22        = 0x05bda0b0   r23        = 0x00000000
+r24        = 0x00000000   r25        = 0x01b80190   r26        = 0x00000001
+r27        = 0x00000000   r28        = 0x00000000   r29        = 0x0000010c
+r30        = 0x05efb868   r31        = 0x01b7f000   msr        = 0x02029230
+lr         = 0x00000000   ctr        = 0x00000000   pc         = 0x00cfa364
+cr         = 0x28000244   xer        = 0x00000000   pgTblPtr   = 0x00000000
+asid       = 0x00000001   spefscr    = 0x0000003c
+
+SPE context - Upper 32 bits of GPR
+r0h    =        0   r1h    =        0   r2h    =        0   r3h    =        0
+r4h    =        0   r5h    =        0   r6h    =        0   r7h    =        0
+r8h    =        0   r9h    =        0   r10h   =        0   r11h   =        0
+r12h   =        0   r13h   =        0   r14h   =        0   r15h   =        0
+r16h   =        0   r17h   =        0   r18h   =        0   r19h   =        0
+r20h   =        0   r21h   =        0   r22h   =        0   r23h   =        0
+r24h   =        0   r25h   =        0   r26h   =        0   r27h   =        0
+r28h   =        0   r29h   =        0   r30h   =        0   r31h   =        0
+acch   =        0   accl   =        0   
+
+
+0x0079074c vxTaskEntry  +0x48 : 0x0064e8b4 (0x79074c)
+0x0064e8f4 RCC_TASK_CancelRead+0x218: cliOspfSetProfile ()
+0x0059d95c cliOspfSetProfile+0x1ac: vectorCliIpOspfSetProfile ()
+0x005c2b68 vectorCliIpOspfSetProfile+0x148: dsOspfSetProfilesBox ()
+0x00566f58 dsOspfSetProfilesBox+0xc0 : 0x00565cb4 ()
+0x00565f6c dsOspfSetInterfacesBox+0x5c4: dsOspfSetProfileAuthKey ()
+0x0056b520 dsOspfSetProfileAuthKey+0xb8 : 0x00569980 ()
+0x0056999c dsOspfDeleteArea+0x1c0: 0x0056991c ()
+0x00569968 dsOspfDeleteArea+0x18c: 0x00568ec8 ()
+0x00568f18 dsOspfReleaseData+0x2fc: 0x00568cd4 ()
+0x00568d94 dsOspfReleaseData+0x178: dsSwxError ()
+0x0057b900 dsSwxError   +0x4c : dsSwxPost (0, 0x2, 0x5bda0b0)
+0x0057af40 dsSwxPost    +0x5c : msgQSend ()
+
+
+==============================================================================
+Record #55 - Created Jan 08 19:06:36 2018 VERSION: DX940e v1.0.0 (B12)
+
+==============================================================================
+
+SOFTWARE ERROR: setOspf(0xC2F7D0): commit failed
+
+FILE: /home/build/workspace/vxworks-6.9/vector/apps/ospf/dsOspfData.c, LINE: 184
+8
+
+
+  NAME         ENTRY       TID    PRI   STATUS      PC       SP     ERRNO  DELAY
+
+----------  ------------ -------- --- ---------- -------- -------- ------- -----
+
+tExecHandl> 64e8b4        5bd91d0 110 SUSPEND      cfa364  5efb830       9     0
+
+
+full task name : tExecHandlerc6113
+task entry     : 64e8b4
+process        : kernel
+options        : 0x4009005
+VX_SUPERVISOR_MODE  VX_DEALLOC_STACK    VX_DEALLOC_TCB      VX_SPE_TASK         
+VX_DEALLOC_EXC_STACK
+
+ STACK      BASE     END       SP      SIZE    HIGH   MARGIN
+--------- -------- -------- -------- ------- ------- -------
+execution  5efc000  5eef000  5efb830   53248    2352   50896
+exception  22f8ea0  22f8000             3744     160    3584
+
+VxWorks Events
+--------------
+Events Pended on    : Not Pended
+Received Events     : 0x0
+Options             : N/A
+
+r0         = 0x00000000   sp         = 0x05efb830   r2         = 0x011d61f0
+r3         = 0x00000000   r4         = 0x00000000   r5         = 0x00000000
+r6         = 0x00000000   r7         = 0x00000000   r8         = 0x00000000
+r9         = 0x00000000   r10        = 0x00000000   r11        = 0x00000000
+r12        = 0x00000000   r13        = 0x0144d6b0   r14        = 0x00000000
+r15        = 0x00000000   r16        = 0x00000000   r17        = 0x00000000
+r18        = 0x00000000   r19        = 0x00000000   r20        = 0x00000001
+r21        = 0x02653cf0   r22        = 0x05bd91d0   r23        = 0x00000000
+r24        = 0x00000000   r25        = 0x01b80190   r26        = 0x00000001
+r27        = 0x00000000   r28        = 0x00000000   r29        = 0x0000010c
+r30        = 0x05efb888   r31        = 0x01b7f000   msr        = 0x02029230
+lr         = 0x00000000   ctr        = 0x00000000   pc         = 0x00cfa364
+cr         = 0x28000244   xer        = 0x00000000   pgTblPtr   = 0x00000000
+asid       = 0x00000001   spefscr    = 0x0000003c
+
+SPE context - Upper 32 bits of GPR
+r0h    =        0   r1h    =        0   r2h    =        0   r3h    =        0
+r4h    =        0   r5h    =        0   r6h    =        0   r7h    =        0
+r8h    =        0   r9h    =        0   r10h   =        0   r11h   =        0
+r12h   =        0   r13h   =        0   r14h   =        0   r15h   =        0
+r16h   =        0   r17h   =        0   r18h   =        0   r19h   =        0
+r20h   =        0   r21h   =        0   r22h   =        0   r23h   =        0
+r24h   =        0   r25h   =        0   r26h   =        0   r27h   =        0
+r28h   =        0   r29h   =        0   r30h   =        0   r31h   =        0
+acch   =        0   accl   =        0   
+
+
+0x0079074c vxTaskEntry  +0x48 : 0x0064e8b4 (0x79074c)
+0x0064e8f4 RCC_TASK_CancelRead+0x218: cliOspfSetProfile ()
+0x0059d95c cliOspfSetProfile+0x1ac: vectorCliIpOspfSetProfile ()
+0x005c2b68 vectorCliIpOspfSetProfile+0x148: dsOspfSetProfilesBox ()
+0x00566f58 dsOspfSetProfilesBox+0xc0 : 0x00565cb4 ()
+0x00565f48 dsOspfSetInterfacesBox+0x5a0: dsOspfSetProfileAuthType ()
+0x0056b3ac dsOspfSetProfileAuthType+0xa4 : 0x00569980 ()
+0x0056999c dsOspfDeleteArea+0x1c0: 0x0056991c ()
+0x00569968 dsOspfDeleteArea+0x18c: 0x00568ec8 ()
+0x00568f18 dsOspfReleaseData+0x2fc: 0x00568cd4 ()
+0x00568d94 dsOspfReleaseData+0x178: dsSwxError ()
+0x0057b900 dsSwxError   +0x4c : dsSwxPost (0, 0x2, 0x5bd91d0)
+0x0057af40 dsSwxPost    +0x5c : msgQSend ()
+
+
+==============================================================================
+Record #56 - Created Jan 08 19:06:36 2018 VERSION: DX940e v1.0.0 (B12)
+
+==============================================================================
+
+SOFTWARE ERROR: setOspf(0xC2F7D0): commit failed
+
+FILE: /home/build/workspace/vxworks-6.9/vector/apps/ospf/dsOspfData.c, LINE: 184
+8
+
+
+  NAME         ENTRY       TID    PRI   STATUS      PC       SP     ERRNO  DELAY
+
+----------  ------------ -------- --- ---------- -------- -------- ------- -----
+
+tExecHandl> 64e8b4        5bd91d0 110 SUSPEND      cfa364  5efb810       9     0
+
+
+full task name : tExecHandlerc6113
+task entry     : 64e8b4
+process        : kernel
+options        : 0x4009005
+VX_SUPERVISOR_MODE  VX_DEALLOC_STACK    VX_DEALLOC_TCB      VX_SPE_TASK         
+VX_DEALLOC_EXC_STACK
+
+ STACK      BASE     END       SP      SIZE    HIGH   MARGIN
+--------- -------- -------- -------- ------- ------- -------
+execution  5efc000  5eef000  5efb810   53248    4688   48560
+exception  22f8ea0  22f8000             3744     160    3584
+
+VxWorks Events
+--------------
+Events Pended on    : Not Pended
+Received Events     : 0x0
+Options             : N/A
+
+r0         = 0x00c48f9c   sp         = 0x05efb810   r2         = 0x011d61f0
+r3         = 0x00000000   r4         = 0x04a413d0   r5         = 0x00000001
+r6         = 0x00000001   r7         = 0x00000001   r8         = 0x00c34830
+r9         = 0x00000000   r10        = 0x05efbddc   r11        = 0x00000001
+r12        = 0x00c50038   r13        = 0x0144d6b0   r14        = 0x00000000
+r15        = 0x00000000   r16        = 0x00000000   r17        = 0x00000000
+r18        = 0x00000000   r19        = 0x00000000   r20        = 0x00000001
+r21        = 0x02653cf0   r22        = 0x05bd91d0   r23        = 0x00000000
+r24        = 0x00000000   r25        = 0x01b80190   r26        = 0x00000001
+r27        = 0x00000000   r28        = 0x00000000   r29        = 0x0000010c
+r30        = 0x05efb868   r31        = 0x01b7f000   msr        = 0x02029230
+lr         = 0x00c45b48   ctr        = 0x00c48e40   pc         = 0x00cfa364
+cr         = 0x28000244   xer        = 0x00000000   pgTblPtr   = 0x00000000
+asid       = 0x00000001   spefscr    = 0x0000003c
+
+SPE context - Upper 32 bits of GPR
+r0h    =        0   r1h    =        0   r2h    =        0   r3h    =        0
+r4h    =        0   r5h    =        0   r6h    =        0   r7h    =        0
+r8h    =        0   r9h    =        0   r10h   =        0   r11h   =        0
+r12h   =        0   r13h   =        0   r14h   =        0   r15h   =        0
+r16h   =        0   r17h   =        0   r18h   =        0   r19h   =        0
+r20h   =        0   r21h   =        0   r22h   =        0   r23h   =        0
+r24h   =        0   r25h   =        0   r26h   =        0   r27h   =        0
+r28h   =        0   r29h   =        0   r30h   =        0   r31h   =        0
+acch   =        0   accl   =        0   
+
+
+0x0079074c vxTaskEntry  +0x48 : 0x0064e8b4 (0x79074c)
+0x0064e8f4 RCC_TASK_CancelRead+0x218: cliOspfSetProfile ()
+0x0059d95c cliOspfSetProfile+0x1ac: vectorCliIpOspfSetProfile ()
+0x005c2b68 vectorCliIpOspfSetProfile+0x148: dsOspfSetProfilesBox ()
+0x00566f58 dsOspfSetProfilesBox+0xc0 : 0x00565cb4 ()
+0x00565f6c dsOspfSetInterfacesBox+0x5c4: dsOspfSetProfileAuthKey ()
+0x0056b520 dsOspfSetProfileAuthKey+0xb8 : 0x00569980 ()
+0x0056999c dsOspfDeleteArea+0x1c0: 0x0056991c ()
+0x00569968 dsOspfDeleteArea+0x18c: 0x00568ec8 ()
+0x00568f18 dsOspfReleaseData+0x2fc: 0x00568cd4 ()
+0x00568d94 dsOspfReleaseData+0x178: dsSwxError ()
+0x0057b900 dsSwxError   +0x4c : dsSwxPost (0, 0x2, 0x5bd91d0)
+0x0057af40 dsSwxPost    +0x5c : msgQSend ()
+
+
+==============================================================================
+Record #57 - Created Jan 08 19:06:36 2018 VERSION: DX940e v1.0.0 (B12)
+
+==============================================================================
+
+SOFTWARE ERROR: setOspf(0xC2F7D0): commit failed
+
+FILE: /home/build/workspace/vxworks-6.9/vector/apps/ospf/dsOspfData.c, LINE: 184
+8
+
+
+  NAME         ENTRY       TID    PRI   STATUS      PC       SP     ERRNO  DELAY
+
+----------  ------------ -------- --- ---------- -------- -------- ------- -----
+
+tExecHandl> 64e8b4        5bd91d0 110 SUSPEND      cfa364  5efb810       9     0
+
+
+full task name : tExecHandlerc6113
+task entry     : 64e8b4
+process        : kernel
+options        : 0x4009005
+VX_SUPERVISOR_MODE  VX_DEALLOC_STACK    VX_DEALLOC_TCB      VX_SPE_TASK         
+VX_DEALLOC_EXC_STACK
+
+ STACK      BASE     END       SP      SIZE    HIGH   MARGIN
+--------- -------- -------- -------- ------- ------- -------
+execution  5efc000  5eef000  5efb810   53248    2384   50864
+exception  22f8ea0  22f8000             3744     160    3584
+
+VxWorks Events
+--------------
+Events Pended on    : Not Pended
+Received Events     : 0x0
+Options             : N/A
+
+r0         = 0x00000000   sp         = 0x05efb810   r2         = 0x011d61f0
+r3         = 0x00000000   r4         = 0x00000000   r5         = 0x00000000
+r6         = 0x00000000   r7         = 0x00000000   r8         = 0x00000000
+r9         = 0x00000000   r10        = 0x00000000   r11        = 0x00000000
+r12        = 0x00000000   r13        = 0x0144d6b0   r14        = 0x00000000
+r15        = 0x00000000   r16        = 0x00000000   r17        = 0x00000000
+r18        = 0x00000000   r19        = 0x00000000   r20        = 0x00000001
+r21        = 0x02653cf0   r22        = 0x05bd91d0   r23        = 0x00000000
+r24        = 0x00000000   r25        = 0x01b80190   r26        = 0x00000001
+r27        = 0x00000000   r28        = 0x00000000   r29        = 0x0000010c
+r30        = 0x05efb868   r31        = 0x01b7f000   msr        = 0x02029230
+lr         = 0x00000000   ctr        = 0x00000000   pc         = 0x00cfa364
+cr         = 0x28000244   xer        = 0x00000000   pgTblPtr   = 0x00000000
+asid       = 0x00000001   spefscr    = 0x0000003c
+
+SPE context - Upper 32 bits of GPR
+r0h    =        0   r1h    =        0   r2h    =        0   r3h    =        0
+r4h    =        0   r5h    =        0   r6h    =        0   r7h    =        0
+r8h    =        0   r9h    =        0   r10h   =        0   r11h   =        0
+r12h   =        0   r13h   =        0   r14h   =        0   r15h   =        0
+r16h   =        0   r17h   =        0   r18h   =        0   r19h   =        0
+r20h   =        0   r21h   =        0   r22h   =        0   r23h   =        0
+r24h   =        0   r25h   =        0   r26h   =        0   r27h   =        0
+r28h   =        0   r29h   =        0   r30h   =        0   r31h   =        0
+acch   =        0   accl   =        0   
+
+
+0x0079074c vxTaskEntry  +0x48 : 0x0064e8b4 (0x79074c)
+0x0064e8f4 RCC_TASK_CancelRead+0x218: cliOspfSetProfile ()
+0x0059d95c cliOspfSetProfile+0x1ac: vectorCliIpOspfSetProfile ()
+0x005c2b68 vectorCliIpOspfSetProfile+0x148: dsOspfSetProfilesBox ()
+0x00566f58 dsOspfSetProfilesBox+0xc0 : 0x00565cb4 ()
+0x00565f6c dsOspfSetInterfacesBox+0x5c4: dsOspfSetProfileAuthKey ()
+0x0056b520 dsOspfSetProfileAuthKey+0xb8 : 0x00569980 ()
+0x0056999c dsOspfDeleteArea+0x1c0: 0x0056991c ()
+0x00569968 dsOspfDeleteArea+0x18c: 0x00568ec8 ()
+0x00568f18 dsOspfReleaseData+0x2fc: 0x00568cd4 ()
+0x00568d94 dsOspfReleaseData+0x178: dsSwxError ()
+0x0057b900 dsSwxError   +0x4c : dsSwxPost (0, 0x2, 0x5bd91d0)
+0x0057af40 dsSwxPost    +0x5c : msgQSend ()
+
+
+==============================================================================
+Record #58 - Created Jan 08 19:07:07 2018 VERSION: DX940e v1.0.0 (B12)
+
+==============================================================================
+
+SOFTWARE ERROR: setOspf(0xC2F7D0): commit failed
+
+FILE: /home/build/workspace/vxworks-6.9/vector/apps/ospf/dsOspfData.c, LINE: 184
+8
+
+
+  NAME         ENTRY       TID    PRI   STATUS      PC       SP     ERRNO  DELAY
+
+----------  ------------ -------- --- ---------- -------- -------- ------- -----
+
+tExecHandl> 64e8b4        5cb9820 110 SUSPEND      cfa364  5efb810       9     0
+
+
+full task name : tExecHandlerc6113
+task entry     : 64e8b4
+process        : kernel
+options        : 0x4009005
+VX_SUPERVISOR_MODE  VX_DEALLOC_STACK    VX_DEALLOC_TCB      VX_SPE_TASK         
+VX_DEALLOC_EXC_STACK
+
+ STACK      BASE     END       SP      SIZE    HIGH   MARGIN
+--------- -------- -------- -------- ------- ------- -------
+execution  5efc000  5eef000  5efb810   53248    2384   50864
+exception  5bddea0  5bdd000             3744     160    3584
+
+VxWorks Events
+--------------
+Events Pended on    : Not Pended
+Received Events     : 0x0
+Options             : N/A
+
+r0         = 0x00000000   sp         = 0x05efb810   r2         = 0x011d61f0
+r3         = 0x00000000   r4         = 0x00000000   r5         = 0x00000000
+r6         = 0x00000000   r7         = 0x00000000   r8         = 0x00000000
+r9         = 0x00000000   r10        = 0x00000000   r11        = 0x00000000
+r12        = 0x00000000   r13        = 0x0144d6b0   r14        = 0x00000000
+r15        = 0x00000000   r16        = 0x00000000   r17        = 0x00000000
+r18        = 0x00000000   r19        = 0x00000000   r20        = 0x00000001
+r21        = 0x02653cf0   r22        = 0x05cb9820   r23        = 0x00000000
+r24        = 0x00000000   r25        = 0x01b80190   r26        = 0x00000001
+r27        = 0x00000000   r28        = 0x00000000   r29        = 0x0000010c
+r30        = 0x05efb868   r31        = 0x01b7f000   msr        = 0x02029230
+lr         = 0x00000000   ctr        = 0x00000000   pc         = 0x00cfa364
+cr         = 0x28000244   xer        = 0x00000000   pgTblPtr   = 0x00000000
+asid       = 0x00000001   spefscr    = 0x0000003c
+
+SPE context - Upper 32 bits of GPR
+r0h    =        0   r1h    =        0   r2h    =        0   r3h    =        0
+r4h    =        0   r5h    =        0   r6h    =        0   r7h    =        0
+r8h    =        0   r9h    =        0   r10h   =        0   r11h   =        0
+r12h   =        0   r13h   =        0   r14h   =        0   r15h   =        0
+r16h   =        0   r17h   =        0   r18h   =        0   r19h   =        0
+r20h   =        0   r21h   =        0   r22h   =        0   r23h   =        0
+r24h   =        0   r25h   =        0   r26h   =        0   r27h   =        0
+r28h   =        0   r29h   =        0   r30h   =        0   r31h   =        0
+acch   =        0   accl   =        0   
+
+
+0x0079074c vxTaskEntry  +0x48 : 0x0064e8b4 (0x79074c)
+0x0064e8f4 RCC_TASK_CancelRead+0x218: cliOspfSetProfile ()
+0x0059d95c cliOspfSetProfile+0x1ac: vectorCliIpOspfSetProfile ()
+0x005c2b68 vectorCliIpOspfSetProfile+0x148: dsOspfSetProfilesBox ()
+0x00566f58 dsOspfSetProfilesBox+0xc0 : 0x00565cb4 ()
+0x00565f6c dsOspfSetInterfacesBox+0x5c4: dsOspfSetProfileAuthKey ()
+0x0056b520 dsOspfSetProfileAuthKey+0xb8 : 0x00569980 ()
+0x0056999c dsOspfDeleteArea+0x1c0: 0x0056991c ()
+0x00569968 dsOspfDeleteArea+0x18c: 0x00568ec8 ()
+0x00568f18 dsOspfReleaseData+0x2fc: 0x00568cd4 ()
+0x00568d94 dsOspfReleaseData+0x178: dsSwxError ()
+0x0057b900 dsSwxError   +0x4c : dsSwxPost (0, 0x2, 0x5cb9820)
+0x0057af40 dsSwxPost    +0x5c : msgQSend ()
+
+
+==============================================================================
+Record #59 - Created Jan 08 19:07:26 2018 VERSION: DX940e v1.0.0 (B12)
+
+==============================================================================
+
+SOFTWARE ERROR: setOspf(0xC2F7D0): commit failed
+
+FILE: /home/build/workspace/vxworks-6.9/vector/apps/ospf/dsOspfData.c, LINE: 184
+8
+
+
+  NAME         ENTRY       TID    PRI   STATUS      PC       SP     ERRNO  DELAY
+
+----------  ------------ -------- --- ---------- -------- -------- ------- -----
+
+tExecHandl> 64e8b4        5eed920 110 SUSPEND      cfa364  5efb830       9     0
+
+
+full task name : tExecHandlerc6115
+task entry     : 64e8b4
+process        : kernel
+options        : 0x4009005
+VX_SUPERVISOR_MODE  VX_DEALLOC_STACK    VX_DEALLOC_TCB      VX_SPE_TASK         
+VX_DEALLOC_EXC_STACK
+
+ STACK      BASE     END       SP      SIZE    HIGH   MARGIN
+--------- -------- -------- -------- ------- ------- -------
+execution  5efc000  5eef000  5efb830   53248    2352   50896
+exception  5bddea0  5bdd000             3744     160    3584
+
+VxWorks Events
+--------------
+Events Pended on    : Not Pended
+Received Events     : 0x0
+Options             : N/A
+
+r0         = 0x00000000   sp         = 0x05efb830   r2         = 0x011d61f0
+r3         = 0x00000000   r4         = 0x00000000   r5         = 0x00000000
+r6         = 0x00000000   r7         = 0x00000000   r8         = 0x00000000
+r9         = 0x00000000   r10        = 0x00000000   r11        = 0x00000000
+r12        = 0x00000000   r13        = 0x0144d6b0   r14        = 0x00000000
+r15        = 0x00000000   r16        = 0x00000000   r17        = 0x00000000
+r18        = 0x00000000   r19        = 0x00000000   r20        = 0x00000001
+r21        = 0x02653cf0   r22        = 0x05eed920   r23        = 0x00000000
+r24        = 0x00000000   r25        = 0x01b80190   r26        = 0x00000001
+r27        = 0x00000000   r28        = 0x00000000   r29        = 0x0000010c
+r30        = 0x05efb888   r31        = 0x01b7f000   msr        = 0x02029230
+lr         = 0x00000000   ctr        = 0x00000000   pc         = 0x00cfa364
+cr         = 0x28000244   xer        = 0x00000000   pgTblPtr   = 0x00000000
+asid       = 0x00000001   spefscr    = 0x0000003c
+
+SPE context - Upper 32 bits of GPR
+r0h    =        0   r1h    =        0   r2h    =        0   r3h    =        0
+r4h    =        0   r5h    =        0   r6h    =        0   r7h    =        0
+r8h    =        0   r9h    =        0   r10h   =        0   r11h   =        0
+r12h   =        0   r13h   =        0   r14h   =        0   r15h   =        0
+r16h   =        0   r17h   =        0   r18h   =        0   r19h   =        0
+r20h   =        0   r21h   =        0   r22h   =        0   r23h   =        0
+r24h   =        0   r25h   =        0   r26h   =        0   r27h   =        0
+r28h   =        0   r29h   =        0   r30h   =        0   r31h   =        0
+acch   =        0   accl   =        0   
+
+
+0x0079074c vxTaskEntry  +0x48 : 0x0064e8b4 (0x79074c)
+0x0064e8f4 RCC_TASK_CancelRead+0x218: cliOspfSetProfile ()
+0x0059d95c cliOspfSetProfile+0x1ac: vectorCliIpOspfSetProfile ()
+0x005c2b68 vectorCliIpOspfSetProfile+0x148: dsOspfSetProfilesBox ()
+0x00566f58 dsOspfSetProfilesBox+0xc0 : 0x00565cb4 ()
+0x00565f48 dsOspfSetInterfacesBox+0x5a0: dsOspfSetProfileAuthType ()
+0x0056b3ac dsOspfSetProfileAuthType+0xa4 : 0x00569980 ()
+0x0056999c dsOspfDeleteArea+0x1c0: 0x0056991c ()
+0x00569968 dsOspfDeleteArea+0x18c: 0x00568ec8 ()
+0x00568f18 dsOspfReleaseData+0x2fc: 0x00568cd4 ()
+0x00568d94 dsOspfReleaseData+0x178: dsSwxError ()
+0x0057b900 dsSwxError   +0x4c : dsSwxPost (0, 0x2, 0x5eed920)
+0x0057af40 dsSwxPost    +0x5c : msgQSend ()
+
+
+
+------------------------------------------------------------------------------
+                                Software Events
+------------------------------------------------------------------------------
+
+No records.
+
+FPGA Revision : 0XE0F7
+Log Size:         12288 bytes (3 pages)
+Record Size:      4096 bytes
+Max Records:      2
+CPU Type:         0x5a
+Errors Missed:    0 (old) + 0 (recent)
+Error count:      2
+Boot count:       2
+Generation count: 2
+MagnumDX# service file show
+
+Filename                       Size    Last Modified
+============================== ======= ===================
+exception.log                  96840969 (null)             
+
+MagnumDX# service system-polling show
+
+System Polling : Disabled.
+
+MagnumDX# service redirect-shell show
+
+Shell Output Redirection : Disabled.
+
+MagnumDX# service exception dump
+
+
+==============================================================================
+Record #1 - Created Sep 01 14:31:19 2000
+==============================================================================
+
+TASK CHECK: ipiked (0x021042f0) is suspended.
+
+
+  NAME         ENTRY       TID    PRI   STATUS      PC       SP     ERRNO  DELAY
+
+----------  ------------ -------- --- ---------- -------- -------- ------- -----
+
+ipiked      ipike_proc    21042f0  50 STOP         9d5200  21178b0  540001     0
+
+
+full task name : ipiked
+task entry     : ipike_proc
+process        : kernel
+options        : 0x5009085
+VX_SUPERVISOR_MODE  VX_DEALLOC_STACK    VX_DEALLOC_TCB      VX_FP_TASK          
+VX_SPE_TASK         VX_PRIVATE_ENV      VX_DEALLOC_EXC_STACK
+
+ STACK      BASE     END       SP      SIZE    HIGH   MARGIN
+--------- -------- -------- -------- ------- ------- -------
+execution  2118000  2110000  21178b0   32768    3312   29456
+exception  211ae90  211a000             3728    2496    1232
+
+VxWorks Events
+--------------
+Events Pended on    : Not Pended
+Received Events     : 0x0
+Options             : N/A
+
+r0         = 0x312e312e   sp         = 0x021178b0   r2         = 0x011d7270
+r3         = 0x312e312e   r4         = 0x04c58dbc   r5         = 0x0211788c
+r6         = 0x00000001   r7         = 0x000000a0   r8         = 0x00000000
+r9         = 0x00000000   r10        = 0x016628d0   r11        = 0x00000000
+r12        = 0x00000000   r13        = 0x0144d690   r14        = 0x00000000
+r15        = 0x00000000   r16        = 0x00000000   r17        = 0x00000000
+r18        = 0x00000000   r19        = 0x00000000   r20        = 0x00000000
+r21        = 0x00000000   r22        = 0x00000000   r23        = 0x00000000
+r24        = 0x00000000   r25        = 0x00000000   r26        = 0x04c58d9c
+r27        = 0x00000000   r28        = 0x02117e14   r29        = 0x02117d14
+r30        = 0x312e312e   r31        = 0x04c58dbc   msr        = 0x02029230
+lr         = 0x009d5224   ctr        = 0x00b5f498   pc         = 0x009d5200
+cr         = 0x42000444   xer        = 0x20000000   pgTblPtr   = 0xeeeeeeee
+asid       = 0x00000001   spefscr    = 0x0000003c
+
+SPE context - Upper 32 bits of GPR
+r0h    =        0   r1h    =        0   r2h    =        0   r3h    = 40400000
+r4h    = 40400000   r5h    = 40400000   r6h    =        0   r7h    =        0
+r8h    =        0   r9h    =        0   r10h   =        0   r11h   =        0
+r12h   =        0   r13h   =        0   r14h   =        0   r15h   =        0
+r16h   =        0   r17h   =        0   r18h   =        0   r19h   =        0
+r20h   =        0   r21h   =        0   r22h   =        0   r23h   =        0
+r24h   =        0   r25h   =        0   r26h   =        0   r27h   =        0
+r28h   =        0   r29h   =        0   r30h   =        0   r31h   =        0
+acch   =        0   accl   =        0   
+
+
+0x009ada48 ipike_proc   +0x98 : ipike_receive_message ()
+0x009d6518 ipike_receive_message+0x1b8: ipcom_tmo2_select ()
+0x008b2938 ipcom_tmo2_select+0x12c: 0x009e3eb0 ()
+0x009e3ec8 ipike_isakmp_free_exchange+0x284: 0x009e3e24 ()
+0x009e3e98 ipike_isakmp_free_exchange+0x254: ipike_send_message ()
+0x009d6ad4 ipike_send_message+0x1c : 0x009d51d8 ()
+
+
+==============================================================================
+Record #2 - Created Sep 02 16:02:55 2000
+==============================================================================
+
+TASK CHECK: ipiked (0x021042f0) is suspended.
+
+
+  NAME         ENTRY       TID    PRI   STATUS      PC       SP     ERRNO  DELAY
+
+----------  ------------ -------- --- ---------- -------- -------- ------- -----
+
+ipiked      ipike_proc    21042f0  50 STOP         9d5200  21178b0  540001     0
+
+
+full task name : ipiked
+task entry     : ipike_proc
+process        : kernel
+options        : 0x5009085
+VX_SUPERVISOR_MODE  VX_DEALLOC_STACK    VX_DEALLOC_TCB      VX_FP_TASK          
+VX_SPE_TASK         VX_PRIVATE_ENV      VX_DEALLOC_EXC_STACK
+
+ STACK      BASE     END       SP      SIZE    HIGH   MARGIN
+--------- -------- -------- -------- ------- ------- -------
+execution  2118000  2110000  21178b0   32768    3312   29456
+exception  211ae90  211a000             3728    2496    1232
+
+VxWorks Events
+--------------
+Events Pended on    : Not Pended
+Received Events     : 0x0
+Options             : N/A
+
+r0         = 0x656e6361   sp         = 0x021178b0   r2         = 0x011d7270
+r3         = 0x656e6361   r4         = 0x04b0daac   r5         = 0x0211788c
+r6         = 0x00000001   r7         = 0x000000a0   r8         = 0x00000000
+r9         = 0x00000000   r10        = 0x016628d0   r11        = 0x00000000
+r12        = 0x00000000   r13        = 0x0144d690   r14        = 0x00000000
+r15        = 0x00000000   r16        = 0x00000000   r17        = 0x00000000
+r18        = 0x00000000   r19        = 0x00000000   r20        = 0x00000000
+r21        = 0x00000000   r22        = 0x00000000   r23        = 0x00000000
+r24        = 0x00000000   r25        = 0x00000000   r26        = 0x04b0da8c
+r27        = 0x00000000   r28        = 0x02117e14   r29        = 0x02117d14
+r30        = 0x656e6361   r31        = 0x04b0daac   msr        = 0x02029230
+lr         = 0x009d5224   ctr        = 0x00b5f498   pc         = 0x009d5200
+cr         = 0x48000444   xer        = 0x20000000   pgTblPtr   = 0xeeeeeeee
+asid       = 0x00000001   spefscr    = 0x0000003c
+
+SPE context - Upper 32 bits of GPR
+r0h    =        0   r1h    =        0   r2h    =        0   r3h    = 40400000
+r4h    = 40400000   r5h    = 40400000   r6h    =        0   r7h    =        0
+r8h    =        0   r9h    =        0   r10h   =        0   r11h   =        0
+r12h   =        0   r13h   =        0   r14h   =        0   r15h   =        0
+r16h   =        0   r17h   =        0   r18h   =        0   r19h   =        0
+r20h   =        0   r21h   =        0   r22h   =        0   r23h   =        0
+r24h   =        0   r25h   =        0   r26h   =        0   r27h   =        0
+r28h   =        0   r29h   =        0   r30h   =        0   r31h   =        0
+acch   =        0   accl   =        0   
+
+
+0x009ada48 ipike_proc   +0x98 : ipike_receive_message ()
+0x009d6518 ipike_receive_message+0x1b8: ipcom_tmo2_select ()
+0x008b2938 ipcom_tmo2_select+0x12c: 0x009e3eb0 ()
+0x009e3ec8 ipike_isakmp_free_exchange+0x284: 0x009e3e24 ()
+0x009e3e98 ipike_isakmp_free_exchange+0x254: ipike_send_message ()
+0x009d6ad4 ipike_send_message+0x1c : 0x009d51d8 ()
+
+
+MagnumDX# event show
+
+Event ID Event Tag            Severity      Remote Mode Local Mode Local Target
+======== ==================== ============= =========== ========== ============
+1-1      COLD_START           Critical (2)  Syslog      Persistent Default     
+1-2      WARM_START           Critical (2)  Syslog      Persistent Default     
+1-3      SYS_RESTART_PING_MON Critical (2)  Syslog      Persistent Default     
+1-4      CPU_HIGH             Critical (2)  Syslog      Persistent Default     
+1-5      CPU_NORMAL           Critical (2)  Syslog      Persistent Default     
+1-6      MEMORY_HIGH          Critical (2)  Syslog      Persistent Default     
+1-7      MEMORY_NORMAL        Critical (2)  Syslog      Persistent Default     
+1-8      SYSPOLL_THRESHOLD_CR Critical (2)  Syslog      Persistent Default     
+1-9      SYSTEM REBOOT FAILED Critical (2)  Syslog      Persistent Default     
+1-10     PING_MONITOR_POLL_ST Critical (2)  Syslog      Persistent Default     
+3-1      LOG_CREATE           Notice (5)    Syslog      Persistent Default     
+3-2      LOG_DELETE           Warning (4)   Syslog      Persistent Default     
+3-3      LOG_AUTO_DELETE      Warning (4)   Syslog      Persistent Default     
+3-4      LOG_LOW_MEMORY       Warning (4)   Syslog      Persistent Default     
+4-1      SOFTWARE_UPLOAD      Info (6)      Syslog      Persistent Default     
+4-2      SOFTWARE_FINALIZED   Notice (5)    Syslog      Persistent Default     
+4-3      SOFTWARE_UPLOAD_FAIL Critical (2)  Syslog      Persistent Default     
+5-1      CONFIG_SWITCH        Warning (4)   Syslog      Persistent Default     
+5-2      CONFIG_UPLOAD        Info (6)      Syslog      Persistent Default     
+5-3      CONFIG_DELETE        Warning (4)   Syslog      Persistent Default     
+5-4      CONFIG_AUTO_DELETE   Notice (5)    Syslog      Persistent Default     
+5-5      CONFIG_SAVE          Warning (4)   Syslog      Persistent Default     
+5-6      CONFIG_CHANGE        Warning (4)   Syslog      Persistent Default     
+5-7      CONFIG_RESTORE       Warning (4)   Syslog      Persistent Default     
+6-1      PASSWORD_CHANGE      Warning (4)   Syslog      Persistent Default     
+6-2      USER_DELETE          Critical (2)  Syslog      Persistent Default     
+6-3      MAX_USERS            Error (3)     Syslog      Persistent Default     
+6-4      NEW_USER             Critical (2)  Syslog      Persistent Default     
+6-5      USER_SUSPENDED       Critical (2)  Syslog      Persistent Default     
+6-6      SUSPENSION_LAPSED    Warning (4)   Syslog      Persistent Default     
+6-7      PASSWORD_EXPIRED     Notice (5)    Syslog      Persistent Default     
+6-8      INVALID_USERNAME     Alert (1)     Syslog      Persistent Default     
+6-9      INVALID_PASSWORD     Alert (1)     Syslog      Persistent Default     
+6-10     HACKING_ATTEMPT      Alert (1)     Syslog      Persistent Default     
+6-11     UNAUTHORIZED_GROUP   Alert (1)     Syslog      Persistent Default     
+6-12     LOGIN NAME CHANGE    Alert (1)     Syslog      Persistent Default     
+6-13     GROUP NAME CHANGE    Alert (1)     Syslog      Persistent Default     
+6-14     USER LOCKED OUT      Alert (1)     Syslog      Persistent Default     
+6-15     USER LOCKOUT LAPSED  Alert (1)     Syslog      Persistent Default     
+6-16     ADMIN NOTES CHANGE   Alert (1)     Syslog      Persistent Default     
+6-17     BAD LOGINS CHANGE    Alert (1)     Syslog      Persistent Default     
+6-18     LOCKOUT TIME CHANGE  Alert (1)     Syslog      Persistent Default     
+6-19     SECURE PASSWORDS CHA Alert (1)     Syslog      Persistent Default     
+6-20     DISALLOW REPEAT PASS Alert (1)     Syslog      Persistent Default     
+6-21     PASSWORD AGING CHANG Alert (1)     Syslog      Persistent Default     
+6-22     ADMIN PASSWORD AGING Alert (1)     Syslog      Persistent Default     
+6-23     USER EXPIRATION CHAN Alert (1)     Syslog      Persistent Default     
+6-24     USER NAME CHANGE     Alert (1)     Syslog      Persistent Default     
+6-25     NEW USER ADDED       Alert (1)     Syslog      Persistent Default     
+6-26     USER BAD LOGINS      Alert (1)     Syslog      Persistent Default     
+6-27     PASSWORD CHANGED     Alert (1)     Syslog      Persistent Default     
+6-28     PASSWORD CHANGE DATE Alert (1)     Syslog      Persistent Default     
+6-29     DATE LOGGED IN       Alert (1)     Syslog      Persistent Default     
+6-30     SUSPENDED USER LOGIN Alert (1)     Syslog      Persistent Default     
+6-31     SUSPEND USER         Alert (1)     Syslog      Persistent Default     
+6-32     UNSUSPEND USER       Alert (1)     Syslog      Persistent Default     
+6-33     LOCKOUT USER         Alert (1)     Syslog      Persistent Default     
+6-34     UNLOCKOUT USER       Alert (1)     Syslog      Persistent Default     
+6-35     SSH IS DISABLED      Alert (1)     Syslog      Persistent Default     
+7-1      LOGIN                Critical (2)  Syslog      Persistent Default     
+7-2      LOGOUT               Critical (2)  Syslog      Persistent Default     
+7-3      IDLE_OUT             Critical (2)  Syslog      Persistent Default     
+7-4      CONSOLE_DISCONNECT   Critical (2)  Syslog      Persistent Default     
+8-1      ETHERNET_DOWN        Critical (2)  Syslog      Persistent Default     
+8-2      ETHERNET_UP          Critical (2)  Syslog      Persistent Default     
+8-3      SERIAL_DOWN          Critical (2)  Syslog      Persistent Default     
+8-4      SERIAL_UP            Critical (2)  Syslog      Persistent Default     
+9-1      INTERFACE_DOWN       Critical (2)  Syslog      Persistent Default     
+9-2      INTERFACE_UP         Critical (2)  Syslog      Persistent Default     
+10-1     PORT_LOCKED          Critical (2)  Syslog      Persistent Default     
+11-1     MAX_PERMIT_FLOWS     Critical (2)  Syslog      Volatile   Firewall    
+11-2     MAX_DENIED_FLOWS     Critical (2)  Syslog      Volatile   Firewall    
+11-3     TCP_START            Notice (5)    Syslog      Persistent Firewall    
+11-4     TCP_ESTAB            Notice (5)    Syslog      Persistent Firewall    
+11-5     TCP_UPDATE           Notice (5)    Syslog      Persistent Firewall    
+11-6     TCP_END              Notice (5)    Syslog      Persistent Firewall    
+11-7     TCP_DENIED           Critical (2)  Syslog      Volatile   Firewall    
+11-8     TCP_DENIED_UPDATE    Critical (2)  Syslog      Volatile   Firewall    
+11-9     UDP_START            Notice (5)    Syslog      Persistent Firewall    
+11-10    UDP_UPDATE           Notice (5)    Syslog      Persistent Firewall    
+11-11    UDP_DENIED           Critical (2)  Syslog      Volatile   Firewall    
+11-12    UDP_DENIED_UPDATE    Critical (2)  Syslog      Volatile   Firewall    
+11-13    ICMP_START           Notice (5)    Syslog      Persistent Firewall    
+11-14    ICMP_UPDATE          Notice (5)    Syslog      Persistent Firewall    
+11-15    ICMP_DENIED          Critical (2)  Syslog      Volatile   Firewall    
+11-16    ICMP_DENIED_UPDATE   Critical (2)  Syslog      Volatile   Firewall    
+12-1     TS_HOST_UNREACH      Warning (4)   Syslog      Persistent Default     
+12-2     TS_HOST_DOWN         Warning (4)   Syslog      Persistent Default     
+12-3     TS_CONN_REFUSED      Warning (4)   Syslog      Persistent Default     
+12-4     TS_LOST_CONN         Error (3)     Syslog      Persistent Default     
+12-5     TS_NO_SSL            Warning (4)   Syslog      Persistent Default     
+12-6     TS_SSL_NOTICE        Notice (5)    Syslog      Persistent Default     
+12-7     TS_SSL_PROBLEM       Error (3)     Syslog      Persistent Default     
+12-8     TS_SSL_CERT_INVALID  Error (3)     Syslog      Persistent Default     
+13-1     RSTP_NON_EDGE_DOWN   Critical (2)  Syslog      Persistent Default     
+13-2     RSTP_SENT_TCN        Critical (2)  Syslog      Persistent Default     
+14-1     OSPF_NBR_2WAY        Notice (5)    Syslog      Persistent Default     
+14-2     OSPF_NBR_FULL        Notice (5)    Syslog      Persistent Default     
+14-3     OSPF_NBR_DOWN        Critical (2)  Syslog      Persistent Default     
+15-1     BGP_PEER_ESTAB       Notice (5)    Syslog      Persistent Default     
+15-2     BGP_KA_TIMEOUT       Critical (2)  Syslog      Persistent Default     
+16-1     VRRP_MASTER          Warning (4)   Syslog      Persistent Default     
+16-2     VRRP_BACKUP          Warning (4)   Syslog      Persistent Default     
+17-1     PPP_HANGUP           Critical (2)  Syslog      Persistent Default     
+17-2     PPP_CONNECT          Notice (5)    Syslog      Persistent Default     
+17-3     PPP_SPEED_CHANGE     Notice (5)    Syslog      Persistent Default     
+18-1     IKE_PHASE1_SUCCESS   Notice (5)    Syslog      Persistent Default     
+18-2     IKE_PHASE2_SUCCESS   Notice (5)    Syslog      Persistent Default     
+18-3     IKE_DEAD_PEER        Critical (2)  Syslog      Persistent Default     
+18-4     IKE_PHASE1_FAIL      Error (3)     Syslog      Persistent Default     
+18-5     IKE_PHASE2_FAIL      Error (3)     Syslog      Persistent Default     
+19-1     CERT_CREATE          Notice (5)    Syslog      Persistent Default     
+19-2     CERT_UPLOAD          Notice (5)    Syslog      Persistent Default     
+19-3     CERT_DELETE          Warning (4)   Syslog      Persistent Default     
+19-4     CERT_TRUST           Warning (4)   Syslog      Persistent Default     
+19-5     CERT_UNTRUST         Warning (4)   Syslog      Persistent Default     
+20-1     DHCPC_TIMEOUT        Warning (4)   Syslog      Persistent Default     
+20-2     DHCPC_CONFLICT       Error (3)     Syslog      Persistent Default     
+21-1     SFP_NOT_PRESENT      Warning (4)   Syslog      Persistent Default     
+21-2     SFP_SPEED_MISMATCH   Critical (2)  Syslog      Persistent Default     
+21-3     SFP_READ_ERROR       Critical (2)  Syslog      Persistent Default     
+21-4     SFP_OK               Info (6)      Syslog      Persistent Default     
+22-1     WAN_LOOP_UP          Warning (4)   Syslog      Persistent Default     
+22-2     WAN_LOOP_DOWN        Warning (4)   Syslog      Persistent Default     
+22-3     WAN_RX_LEVEL         Notice (5)    Syslog      Persistent Default     
+22-4     WAN_ERROR            Warning (4)   Syslog      Persistent Default     
+22-5     WAN_VERILINK_HEADER_ Info (6)      Syslog      Persistent Default     
+22-6     WAN_VERILINK_EXT_MIS Warning (4)   Syslog      Persistent Default     
+23-1     DDNS_UPDATE_SUCCESS  Info (6)      Syslog      Persistent Default     
+23-2     DDNS_UPDATE_FAILURE  Warning (4)   Syslog      Persistent Default     
+23-3     DDNS_OFFLINE_SUCCESS Info (6)      Syslog      Persistent Default     
+23-4     DDNS_OFFLINE_FAILURE Warning (4)   Syslog      Persistent Default     
+23-5     DDNS_RETRY_UPDATE    Info (6)      Syslog      Persistent Default     
+23-6     DDNS_RETRY_OFFLINE   Info (6)      Syslog      Persistent Default     
+24-1     BKUP_2NDARY_TEST_SUC Error (3)     Syslog      Persistent Default     
+24-2     BKUP_2NDARY_TEST_FAI Error (3)     Syslog      Persistent Default     
+24-3     BKUP_2NDARY_TEST_LIN Error (3)     Syslog      Persistent Default     
+27-1     GOOSE_MOFN_RTT_EXCEE Critical (2)  Syslog      Persistent Default     
+27-2     GOOSE_MOFN_RTT_NORMA Critical (2)  Syslog      Persistent Default     
+27-3     GOOSE_CONSECUTIVE_MI Critical (2)  Syslog      Persistent Default     
+27-4     GOOSE_CONSECUTIVE_RE Critical (2)  Syslog      Persistent Default     
+
+MagnumDX# log show files
+
+                                                        Compressed
+Filename                                                Size       Status
+======================================================= ========== ===========
+Default-20180108-18470942.log                           32767      Closed    
+Default-20180108-19282043.log                           31857      Active    
+
+MagnumDX# log dump Default-20180108-19282043.log
+
+<2>Jan 08 19:28:20 2018 %OSPF_NBR_DOWN-14-3: OSPF neighbor 1.1.1.1 transitioned 
+to DOWN.
+<4>Jan 08 19:28:20 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:28:20 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:28:20 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:28:20 2018 %ETHERNET_DOWN-8-1: Ethernet port E6 is down.
+<4>Jan 08 19:28:21 2018 %LOG_AUTO_DELETE-3-3: Log file 'Default-20180108-1744294
+1.log' was automatically deleted.
+<5>Jan 08 19:28:21 2018 %LOG_CREATE-3-1: Log file 'Default-20180108-19282043.log
+' was created.
+<4>Jan 08 19:28:21 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:28:21 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:28:21 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:28:21 2018 %ETHERNET_DOWN-8-1: Ethernet port E4 is down.
+<4>Jan 08 19:28:23 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<2>Jan 08 19:28:24 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (10.20
+.6.252).
+<2>Jan 08 19:28:44 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (10.20.6
+.252).
+<4>Jan 08 19:28:50 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:28:50 2018 %ETHERNET_UP-8-2: Ethernet port E6 is up.
+<4>Jan 08 19:28:50 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:28:52 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<4>Jan 08 19:28:52 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:28:52 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<2>Jan 08 19:29:04 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (172.16.
+210.50).
+<2>Jan 08 19:29:09 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (172.1
+6.210.50).
+<5>Jan 08 19:29:16 2018 %OSPF_NBR_FULL-14-2: OSPF neighbor 1.1.1.1 transitioned 
+to FULL.
+<4>Jan 08 19:29:19 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:29:20 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<4>Jan 08 19:29:20 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:29:20 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:29:21 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:29:21 2018 %ETHERNET_DOWN-8-1: Ethernet port E6 is down.
+<2>Jan 08 19:29:23 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (10.20
+.6.252).
+<2>Jan 08 19:29:31 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (10.20.6
+.252).
+<4>Jan 08 19:29:38 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:29:38 2018 %ETHERNET_UP-8-2: Ethernet port E6 is up.
+<4>Jan 08 19:29:39 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:29:40 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:29:40 2018 %ETHERNET_UP-8-2: Ethernet port E4 is up.
+<4>Jan 08 19:29:40 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:29:41 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<4>Jan 08 19:29:41 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:29:44 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/RouteT
+able' was changed by user 'manager'.
+<4>Jan 08 19:29:46 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<4>Jan 08 19:30:04 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<4>Jan 08 19:30:04 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:30:04 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:30:04 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:30:05 2018 %ETHERNET_DOWN-8-1: Ethernet port E6 is down.
+<4>Jan 08 19:30:06 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:30:06 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:30:06 2018 %ETHERNET_DOWN-8-1: Ethernet port E4 is down.
+<4>Jan 08 19:30:08 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<2>Jan 08 19:30:09 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (10.20
+.6.252).
+<2>Jan 08 19:30:18 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (172.16.
+210.50).
+<2>Jan 08 19:30:24 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (172.1
+6.210.50).
+<2>Jan 08 19:30:26 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (10.20.6
+.252).
+<4>Jan 08 19:30:32 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:30:32 2018 %ETHERNET_UP-8-2: Ethernet port E6 is up.
+<4>Jan 08 19:30:32 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:30:33 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<4>Jan 08 19:30:33 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:30:33 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<5>Jan 08 19:30:57 2018 %OSPF_NBR_FULL-14-2: OSPF neighbor 1.1.1.1 transitioned 
+to FULL.
+<4>Jan 08 19:31:02 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<4>Jan 08 19:31:02 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:31:02 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:31:02 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:31:02 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:31:02 2018 %ETHERNET_DOWN-8-1: Ethernet port E6 is down.
+<2>Jan 08 19:31:05 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (10.20
+.6.252).
+<2>Jan 08 19:31:13 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (10.20.6
+.252).
+<4>Jan 08 19:31:19 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:31:19 2018 %ETHERNET_UP-8-2: Ethernet port E6 is up.
+<4>Jan 08 19:31:19 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:31:20 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<4>Jan 08 19:31:20 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:31:20 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<2>Jan 08 19:31:33 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (172.16.
+210.50).
+<2>Jan 08 19:31:38 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (172.1
+6.210.50).
+<5>Jan 08 19:31:44 2018 %OSPF_NBR_FULL-14-2: OSPF neighbor 1.1.1.1 transitioned 
+to FULL.
+<4>Jan 08 19:31:47 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<2>Jan 08 19:31:48 2018 %OSPF_NBR_DOWN-14-3: OSPF neighbor 1.1.1.1 transitioned 
+to DOWN.
+<4>Jan 08 19:31:48 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:31:48 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:31:48 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:31:48 2018 %ETHERNET_DOWN-8-1: Ethernet port E6 is down.
+<4>Jan 08 19:31:50 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<2>Jan 08 19:31:51 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (10.20
+.6.252).
+<2>Jan 08 19:32:00 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (10.20.6
+.252).
+<4>Jan 08 19:32:06 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:32:06 2018 %ETHERNET_UP-8-2: Ethernet port E6 is up.
+<4>Jan 08 19:32:06 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:32:07 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<4>Jan 08 19:32:07 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<5>Jan 08 19:32:25 2018 %OSPF_NBR_FULL-14-2: OSPF neighbor 1.1.1.1 transitioned 
+to FULL.
+<2>Jan 08 19:32:29 2018 %OSPF_NBR_DOWN-14-3: OSPF neighbor 1.1.1.1 transitioned 
+to DOWN.
+<4>Jan 08 19:32:29 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:32:29 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:32:29 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:32:29 2018 %ETHERNET_DOWN-8-1: Ethernet port E6 is down.
+<4>Jan 08 19:32:31 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<2>Jan 08 19:32:33 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (10.20
+.6.252).
+<2>Jan 08 19:32:47 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (172.16.
+210.50).
+<2>Jan 08 19:32:52 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (10.20.6
+.252).
+<2>Jan 08 19:32:53 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (172.1
+6.210.50).
+<4>Jan 08 19:32:58 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:32:58 2018 %ETHERNET_UP-8-2: Ethernet port E6 is up.
+<4>Jan 08 19:32:58 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:32:59 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<4>Jan 08 19:32:59 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:33:00 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<5>Jan 08 19:33:11 2018 %OSPF_NBR_FULL-14-2: OSPF neighbor 1.1.1.1 transitioned 
+to FULL.
+<4>Jan 08 19:33:15 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<4>Jan 08 19:33:16 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:33:16 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:33:16 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:33:16 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:33:16 2018 %ETHERNET_DOWN-8-1: Ethernet port E6 is down.
+<2>Jan 08 19:33:18 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (10.20
+.6.252).
+<2>Jan 08 19:33:47 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (10.20.6
+.252).
+<4>Jan 08 19:33:53 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:33:53 2018 %ETHERNET_UP-8-2: Ethernet port E6 is up.
+<4>Jan 08 19:33:53 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:33:54 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<4>Jan 08 19:33:54 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:33:54 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<2>Jan 08 19:34:02 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (172.16.
+210.50).
+<2>Jan 08 19:34:08 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (172.1
+6.210.50).
+<5>Jan 08 19:34:18 2018 %OSPF_NBR_FULL-14-2: OSPF neighbor 1.1.1.1 transitioned 
+to FULL.
+<4>Jan 08 19:34:22 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:34:23 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<4>Jan 08 19:34:23 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:34:23 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:34:23 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:34:23 2018 %ETHERNET_DOWN-8-1: Ethernet port E6 is down.
+<2>Jan 08 19:34:25 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (10.20
+.6.252).
+<2>Jan 08 19:34:36 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (10.20.6
+.252).
+<4>Jan 08 19:34:42 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:34:42 2018 %ETHERNET_UP-8-2: Ethernet port E6 is up.
+<4>Jan 08 19:34:42 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:34:44 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<4>Jan 08 19:34:44 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:34:44 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<5>Jan 08 19:35:08 2018 %OSPF_NBR_FULL-14-2: OSPF neighbor 1.1.1.1 transitioned 
+to FULL.
+<4>Jan 08 19:35:11 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:35:13 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<4>Jan 08 19:35:13 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:35:13 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:35:13 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:35:13 2018 %ETHERNET_DOWN-8-1: Ethernet port E6 is down.
+<2>Jan 08 19:35:15 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (10.20
+.6.252).
+<2>Jan 08 19:35:17 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (172.16.
+210.50).
+<2>Jan 08 19:35:23 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (172.1
+6.210.50).
+<2>Jan 08 19:35:23 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (10.20.6
+.252).
+<4>Jan 08 19:35:28 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/A
+reaTable' was changed by user 'manager'.
+<4>Jan 08 19:35:29 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:35:29 2018 %ETHERNET_UP-8-2: Ethernet port E6 is up.
+<4>Jan 08 19:35:29 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:35:31 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<4>Jan 08 19:35:31 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/A
+reaTable' was changed by user 'manager'.
+<4>Jan 08 19:35:31 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:35:31 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<5>Jan 08 19:35:49 2018 %OSPF_NBR_FULL-14-2: OSPF neighbor 1.1.1.1 transitioned 
+to FULL.
+<4>Jan 08 19:35:52 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:35:53 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<4>Jan 08 19:35:53 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:35:53 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:35:54 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:35:54 2018 %ETHERNET_DOWN-8-1: Ethernet port E6 is down.
+<2>Jan 08 19:35:56 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (10.20
+.6.252).
+<2>Jan 08 19:36:04 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (10.20.6
+.252).
+<4>Jan 08 19:36:12 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:36:12 2018 %ETHERNET_UP-8-2: Ethernet port E6 is up.
+<4>Jan 08 19:36:12 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:36:13 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:36:13 2018 %ETHERNET_UP-8-2: Ethernet port E4 is up.
+<4>Jan 08 19:36:13 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:36:14 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<4>Jan 08 19:36:15 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:36:15 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<2>Jan 08 19:36:31 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (172.16.
+210.50).
+<2>Jan 08 19:36:37 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (172.1
+6.210.50).
+<5>Jan 08 19:36:45 2018 %OSPF_NBR_FULL-14-2: OSPF neighbor 1.1.1.1 transitioned 
+to FULL.
+<4>Jan 08 19:37:01 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<4>Jan 08 19:37:01 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:37:01 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:37:01 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:37:01 2018 %ETHERNET_DOWN-8-1: Ethernet port E6 is down.
+<4>Jan 08 19:37:02 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:37:02 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:37:02 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:37:03 2018 %ETHERNET_DOWN-8-1: Ethernet port E4 is down.
+<2>Jan 08 19:37:05 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (10.20
+.6.252).
+<2>Jan 08 19:37:13 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (10.20.6
+.252).
+<4>Jan 08 19:37:20 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:37:20 2018 %ETHERNET_UP-8-2: Ethernet port E6 is up.
+<4>Jan 08 19:37:20 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:37:22 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:37:22 2018 %ETHERNET_UP-8-2: Ethernet port E4 is up.
+<4>Jan 08 19:37:22 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:37:23 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<4>Jan 08 19:37:23 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:37:23 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<5>Jan 08 19:37:41 2018 %OSPF_NBR_FULL-14-2: OSPF neighbor 1.1.1.1 transitioned 
+to FULL.
+<2>Jan 08 19:37:46 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (172.16.
+210.50).
+<2>Jan 08 19:37:52 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (172.1
+6.210.50).
+<4>Jan 08 19:38:02 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<4>Jan 08 19:38:02 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:38:02 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:38:02 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:38:03 2018 %ETHERNET_DOWN-8-1: Ethernet port E6 is down.
+<4>Jan 08 19:38:03 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:38:03 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:38:04 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:38:04 2018 %ETHERNET_DOWN-8-1: Ethernet port E4 is down.
+<2>Jan 08 19:38:06 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (10.20
+.6.252).
+<2>Jan 08 19:38:22 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (10.20.6
+.252).
+<4>Jan 08 19:38:28 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:38:28 2018 %ETHERNET_UP-8-2: Ethernet port E6 is up.
+<4>Jan 08 19:38:29 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:38:30 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<4>Jan 08 19:38:30 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:38:30 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<5>Jan 08 19:38:40 2018 %OSPF_NBR_2WAY-14-1: OSPF neighbor 1.1.1.1 transitioned 
+to 2WAY.
+<4>Jan 08 19:38:48 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:38:50 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<4>Jan 08 19:38:50 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:38:50 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:38:50 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:38:50 2018 %ETHERNET_DOWN-8-1: Ethernet port E6 is down.
+<2>Jan 08 19:38:52 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (10.20
+.6.252).
+<2>Jan 08 19:39:00 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (10.20.6
+.252).
+<2>Jan 08 19:39:00 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (172.16.
+210.50).
+<4>Jan 08 19:39:06 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:39:06 2018 %ETHERNET_UP-8-2: Ethernet port E6 is up.
+<4>Jan 08 19:39:06 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<2>Jan 08 19:39:06 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (172.1
+6.210.50).
+<4>Jan 08 19:39:07 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<4>Jan 08 19:39:08 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:39:08 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:39:21 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<4>Jan 08 19:39:21 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:39:22 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:39:22 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:39:22 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:39:22 2018 %ETHERNET_DOWN-8-1: Ethernet port E6 is down.
+<2>Jan 08 19:39:24 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (10.20
+.6.252).
+<2>Jan 08 19:39:32 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (10.20.6
+.252).
+<4>Jan 08 19:39:38 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:39:38 2018 %ETHERNET_UP-8-2: Ethernet port E6 is up.
+<4>Jan 08 19:39:38 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:39:39 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<4>Jan 08 19:39:39 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:39:40 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:39:50 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<2>Jan 08 19:39:50 2018 %OSPF_NBR_DOWN-14-3: OSPF neighbor 1.1.1.1 transitioned 
+to DOWN.
+<4>Jan 08 19:39:50 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:39:50 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:39:50 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:39:50 2018 %ETHERNET_DOWN-8-1: Ethernet port E6 is down.
+<4>Jan 08 19:39:52 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<2>Jan 08 19:39:53 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (10.20
+.6.252).
+<2>Jan 08 19:40:01 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (10.20.6
+.252).
+<4>Jan 08 19:40:06 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/A
+reaTable' was changed by user 'manager'.
+<4>Jan 08 19:40:09 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:40:09 2018 %ETHERNET_UP-8-2: Ethernet port E6 is up.
+<4>Jan 08 19:40:09 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:40:10 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:40:10 2018 %ETHERNET_UP-8-2: Ethernet port E4 is up.
+<4>Jan 08 19:40:11 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:40:12 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<4>Jan 08 19:40:12 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/A
+reaTable' was changed by user 'manager'.
+<4>Jan 08 19:40:12 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:40:12 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:40:13 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<2>Jan 08 19:40:15 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (172.16.
+210.50).
+<2>Jan 08 19:40:21 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (172.1
+6.210.50).
+<5>Jan 08 19:40:36 2018 %OSPF_NBR_FULL-14-2: OSPF neighbor 1.1.1.1 transitioned 
+to FULL.
+<4>Jan 08 19:40:41 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<2>Jan 08 19:40:42 2018 %OSPF_NBR_DOWN-14-3: OSPF neighbor 1.1.1.1 transitioned 
+to DOWN.
+<4>Jan 08 19:40:42 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:40:42 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:40:42 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:40:42 2018 %ETHERNET_DOWN-8-1: Ethernet port E6 is down.
+<4>Jan 08 19:40:43 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:40:43 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:40:43 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:40:44 2018 %ETHERNET_DOWN-8-1: Ethernet port E4 is down.
+<4>Jan 08 19:40:46 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<2>Jan 08 19:40:47 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (10.20
+.6.252).
+<2>Jan 08 19:40:55 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (10.20.6
+.252).
+<4>Jan 08 19:41:01 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:41:01 2018 %ETHERNET_UP-8-2: Ethernet port E6 is up.
+<4>Jan 08 19:41:01 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:41:02 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<4>Jan 08 19:41:02 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:41:03 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<5>Jan 08 19:41:26 2018 %OSPF_NBR_FULL-14-2: OSPF neighbor 1.1.1.1 transitioned 
+to FULL.
+<2>Jan 08 19:41:29 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (172.16.
+210.50).
+<4>Jan 08 19:41:32 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<2>Jan 08 19:41:32 2018 %OSPF_NBR_DOWN-14-3: OSPF neighbor 1.1.1.1 transitioned 
+to DOWN.
+<4>Jan 08 19:41:32 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:41:32 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:41:32 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:41:32 2018 %ETHERNET_DOWN-8-1: Ethernet port E6 is down.
+<4>Jan 08 19:41:34 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<2>Jan 08 19:41:35 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (172.1
+6.210.50).
+<2>Jan 08 19:41:36 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (10.20
+.6.252).
+<2>Jan 08 19:41:44 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (10.20.6
+.252).
+<4>Jan 08 19:41:50 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:41:50 2018 %ETHERNET_UP-8-2: Ethernet port E6 is up.
+<4>Jan 08 19:41:50 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:41:51 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<4>Jan 08 19:41:52 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:41:52 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<5>Jan 08 19:42:16 2018 %OSPF_NBR_FULL-14-2: OSPF neighbor 1.1.1.1 transitioned 
+to FULL.
+<4>Jan 08 19:42:22 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<2>Jan 08 19:42:22 2018 %OSPF_NBR_DOWN-14-3: OSPF neighbor 1.1.1.1 transitioned 
+to DOWN.
+<4>Jan 08 19:42:22 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:42:22 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:42:22 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:42:22 2018 %ETHERNET_DOWN-8-1: Ethernet port E6 is down.
+<4>Jan 08 19:42:24 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<2>Jan 08 19:42:25 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (10.20
+.6.252).
+<2>Jan 08 19:42:34 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (10.20.6
+.252).
+<4>Jan 08 19:42:41 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:42:41 2018 %ETHERNET_UP-8-2: Ethernet port E6 is up.
+<4>Jan 08 19:42:41 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:42:42 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:42:43 2018 %ETHERNET_UP-8-2: Ethernet port E4 is up.
+<4>Jan 08 19:42:43 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:42:44 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<4>Jan 08 19:42:44 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:42:44 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<2>Jan 08 19:42:44 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (172.16.
+210.50).
+<4>Jan 08 19:42:45 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:42:45 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<2>Jan 08 19:42:50 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (172.1
+6.210.50).
+<5>Jan 08 19:43:08 2018 %OSPF_NBR_FULL-14-2: OSPF neighbor 1.1.1.1 transitioned 
+to FULL.
+<4>Jan 08 19:43:08 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:43:09 2018 %INTERFACE_DOWN-9-1: IP interface E4 is down.
+<2>Jan 08 19:43:09 2018 %ETHERNET_DOWN-8-1: Ethernet port E4 is down.
+<4>Jan 08 19:43:21 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<4>Jan 08 19:43:21 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:43:21 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:43:21 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:43:21 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:43:21 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:43:22 2018 %ETHERNET_DOWN-8-1: Ethernet port E6 is down.
+<4>Jan 08 19:43:22 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:43:22 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<2>Jan 08 19:43:25 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (10.20
+.6.252).
+<2>Jan 08 19:43:33 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (10.20.6
+.252).
+<4>Jan 08 19:43:39 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:43:39 2018 %ETHERNET_UP-8-2: Ethernet port E6 is up.
+<4>Jan 08 19:43:39 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:43:41 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<4>Jan 08 19:43:41 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:43:41 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<2>Jan 08 19:43:59 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (172.16.
+210.50).
+<5>Jan 08 19:43:59 2018 %OSPF_NBR_FULL-14-2: OSPF neighbor 1.1.1.1 transitioned 
+to FULL.
+<2>Jan 08 19:44:04 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (172.1
+6.210.50).
+<4>Jan 08 19:44:11 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<4>Jan 08 19:44:11 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:44:12 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:44:12 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:44:12 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:44:12 2018 %ETHERNET_DOWN-8-1: Ethernet port E6 is down.
+<2>Jan 08 19:44:14 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (10.20
+.6.252).
+<2>Jan 08 19:44:37 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (10.20.6
+.252).
+<4>Jan 08 19:44:42 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:44:42 2018 %ETHERNET_UP-8-2: Ethernet port E6 is up.
+<4>Jan 08 19:44:43 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:44:44 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<4>Jan 08 19:44:44 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<5>Jan 08 19:45:02 2018 %OSPF_NBR_FULL-14-2: OSPF neighbor 1.1.1.1 transitioned 
+to FULL.
+<2>Jan 08 19:45:13 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (172.16.
+210.50).
+<2>Jan 08 19:45:13 2018 %OSPF_NBR_DOWN-14-3: OSPF neighbor 1.1.1.1 transitioned 
+to DOWN.
+<4>Jan 08 19:45:13 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:45:13 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:45:14 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:45:14 2018 %ETHERNET_DOWN-8-1: Ethernet port E6 is down.
+<4>Jan 08 19:45:16 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<2>Jan 08 19:45:17 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (10.20
+.6.252).
+<2>Jan 08 19:45:19 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (172.1
+6.210.50).
+<2>Jan 08 19:45:25 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (10.20.6
+.252).
+<4>Jan 08 19:45:30 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/A
+reaTable' was changed by user 'manager'.
+<4>Jan 08 19:45:32 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:45:32 2018 %ETHERNET_UP-8-2: Ethernet port E6 is up.
+<4>Jan 08 19:45:33 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:45:34 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:45:34 2018 %ETHERNET_UP-8-2: Ethernet port E4 is up.
+<4>Jan 08 19:45:34 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:45:35 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<4>Jan 08 19:45:35 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/A
+reaTable' was changed by user 'manager'.
+<4>Jan 08 19:45:35 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/A
+reaTable' was changed by user 'manager'.
+<4>Jan 08 19:45:36 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:45:36 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<5>Jan 08 19:46:05 2018 %OSPF_NBR_FULL-14-2: OSPF neighbor 1.1.1.1 transitioned 
+to FULL.
+<2>Jan 08 19:46:12 2018 %OSPF_NBR_DOWN-14-3: OSPF neighbor 1.1.1.1 transitioned 
+to DOWN.
+<4>Jan 08 19:46:12 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:46:12 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:46:12 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:46:12 2018 %ETHERNET_DOWN-8-1: Ethernet port E6 is down.
+<4>Jan 08 19:46:13 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:46:13 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:46:13 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:46:14 2018 %ETHERNET_DOWN-8-1: Ethernet port E4 is down.
+<4>Jan 08 19:46:16 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<2>Jan 08 19:46:17 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (10.20
+.6.252).
+<2>Jan 08 19:46:25 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (10.20.6
+.252).
+<2>Jan 08 19:46:28 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (172.16.
+210.50).
+<4>Jan 08 19:46:32 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:46:32 2018 %ETHERNET_UP-8-2: Ethernet port E6 is up.
+<4>Jan 08 19:46:33 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<2>Jan 08 19:46:33 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (172.1
+6.210.50).
+<4>Jan 08 19:46:34 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:46:34 2018 %ETHERNET_UP-8-2: Ethernet port E4 is up.
+<4>Jan 08 19:46:34 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:46:35 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<4>Jan 08 19:46:35 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:46:36 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<5>Jan 08 19:46:53 2018 %OSPF_NBR_FULL-14-2: OSPF neighbor 1.1.1.1 transitioned 
+to FULL.
+<2>Jan 08 19:47:00 2018 %OSPF_NBR_DOWN-14-3: OSPF neighbor 1.1.1.1 transitioned 
+to DOWN.
+<4>Jan 08 19:47:00 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:47:00 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:47:00 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:47:00 2018 %ETHERNET_DOWN-8-1: Ethernet port E6 is down.
+<4>Jan 08 19:47:01 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:47:01 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:47:01 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:47:02 2018 %ETHERNET_DOWN-8-1: Ethernet port E4 is down.
+<4>Jan 08 19:47:04 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<2>Jan 08 19:47:05 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (10.20
+.6.252).
+<2>Jan 08 19:47:13 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (10.20.6
+.252).
+<4>Jan 08 19:47:19 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:47:19 2018 %ETHERNET_UP-8-2: Ethernet port E6 is up.
+<4>Jan 08 19:47:19 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:47:20 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<4>Jan 08 19:47:21 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:47:21 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:47:40 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<4>Jan 08 19:47:40 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:47:40 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:47:40 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:47:41 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:47:41 2018 %ETHERNET_DOWN-8-1: Ethernet port E6 is down.
+<2>Jan 08 19:47:42 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (172.16.
+210.50).
+<2>Jan 08 19:47:43 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (10.20
+.6.252).
+<2>Jan 08 19:47:48 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (172.1
+6.210.50).
+<2>Jan 08 19:47:51 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (10.20.6
+.252).
+<4>Jan 08 19:47:57 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:47:57 2018 %ETHERNET_UP-8-2: Ethernet port E6 is up.
+<4>Jan 08 19:47:57 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:47:58 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<4>Jan 08 19:47:58 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:47:59 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:48:01 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/RouteT
+able' was changed by user 'manager'.
+<4>Jan 08 19:48:02 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<4>Jan 08 19:48:22 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<4>Jan 08 19:48:22 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<4>Jan 08 19:48:23 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:48:23 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:48:23 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:48:23 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:48:24 2018 %ETHERNET_DOWN-8-1: Ethernet port E6 is down.
+<2>Jan 08 19:48:25 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (10.20
+.6.252).
+<2>Jan 08 19:48:34 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (10.20.6
+.252).
+<4>Jan 08 19:48:41 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:48:41 2018 %ETHERNET_UP-8-2: Ethernet port E6 is up.
+<4>Jan 08 19:48:42 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:48:43 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:48:43 2018 %ETHERNET_UP-8-2: Ethernet port E4 is up.
+<4>Jan 08 19:48:43 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:48:44 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<4>Jan 08 19:48:44 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:48:44 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:48:48 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/RouteT
+able' was changed by user 'manager'.
+<4>Jan 08 19:48:49 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<2>Jan 08 19:48:57 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (172.16.
+210.50).
+<2>Jan 08 19:49:02 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (172.1
+6.210.50).
+<4>Jan 08 19:49:03 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<4>Jan 08 19:49:05 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<4>Jan 08 19:49:05 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:49:05 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:49:05 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:49:05 2018 %ETHERNET_DOWN-8-1: Ethernet port E6 is down.
+<4>Jan 08 19:49:06 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:49:06 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:49:07 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:49:07 2018 %ETHERNET_DOWN-8-1: Ethernet port E4 is down.
+<2>Jan 08 19:49:09 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (10.20
+.6.252).
+<2>Jan 08 19:49:17 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (10.20.6
+.252).
+<4>Jan 08 19:49:23 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:49:23 2018 %ETHERNET_UP-8-2: Ethernet port E6 is up.
+<4>Jan 08 19:49:23 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:49:24 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<4>Jan 08 19:49:24 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:49:25 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<5>Jan 08 19:49:48 2018 %OSPF_NBR_FULL-14-2: OSPF neighbor 1.1.1.1 transitioned 
+to FULL.
+<4>Jan 08 19:49:53 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<2>Jan 08 19:49:54 2018 %OSPF_NBR_DOWN-14-3: OSPF neighbor 1.1.1.1 transitioned 
+to DOWN.
+<4>Jan 08 19:49:54 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:49:54 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:49:54 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:49:54 2018 %ETHERNET_DOWN-8-1: Ethernet port E6 is down.
+<4>Jan 08 19:49:56 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<2>Jan 08 19:49:57 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (10.20
+.6.252).
+<2>Jan 08 19:50:06 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (10.20.6
+.252).
+<4>Jan 08 19:50:11 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:50:11 2018 %ETHERNET_UP-8-2: Ethernet port E6 is up.
+<4>Jan 08 19:50:12 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:50:13 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<4>Jan 08 19:50:13 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<2>Jan 08 19:50:19 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (172.16.
+210.50).
+<2>Jan 08 19:50:24 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (172.1
+6.210.50).
+<2>Jan 08 19:50:32 2018 %OSPF_NBR_DOWN-14-3: OSPF neighbor 1.1.1.1 transitioned 
+to DOWN.
+<4>Jan 08 19:50:32 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:50:32 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:50:32 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:50:32 2018 %ETHERNET_DOWN-8-1: Ethernet port E6 is down.
+<4>Jan 08 19:50:34 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<2>Jan 08 19:50:35 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (10.20
+.6.252).
+<2>Jan 08 19:50:43 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (10.20.6
+.252).
+<4>Jan 08 19:50:51 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:50:51 2018 %ETHERNET_UP-8-2: Ethernet port E6 is up.
+<4>Jan 08 19:50:51 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:50:52 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:50:52 2018 %ETHERNET_UP-8-2: Ethernet port E4 is up.
+<4>Jan 08 19:50:52 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:50:54 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<4>Jan 08 19:50:54 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:50:54 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<2>Jan 08 19:50:55 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (10.11.2
+46.200).
+<2>Jan 08 19:51:06 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (10.11
+.246.200).
+<2>Jan 08 19:51:24 2018 %OSPF_NBR_DOWN-14-3: OSPF neighbor 1.1.1.1 transitioned 
+to DOWN.
+<4>Jan 08 19:51:24 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:51:24 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:51:24 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:51:24 2018 %ETHERNET_DOWN-8-1: Ethernet port E6 is down.
+<4>Jan 08 19:51:25 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:51:25 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:51:25 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:51:25 2018 %ETHERNET_DOWN-8-1: Ethernet port E4 is down.
+<4>Jan 08 19:51:27 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<2>Jan 08 19:51:29 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (10.20
+.6.252).
+<2>Jan 08 19:51:33 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (172.16.
+210.50).
+<2>Jan 08 19:51:39 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (172.1
+6.210.50).
+<2>Jan 08 19:51:39 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (10.20.6
+.252).
+<4>Jan 08 19:51:45 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 19:51:45 2018 %ETHERNET_UP-8-2: Ethernet port E6 is up.
+<4>Jan 08 19:51:46 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 19:51:47 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<4>Jan 08 19:51:47 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 19:51:47 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<5>Jan 08 19:52:11 2018 %OSPF_NBR_FULL-14-2: OSPF neighbor 1.1.1.1 transitioned 
+to FULL.
+<2>Jan 08 19:52:48 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (172.16.
+210.50).
+<2>Jan 08 19:52:53 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (172.1
+6.210.50).
+<2>Jan 08 19:54:06 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (172.16.
+210.50).
+<2>Jan 08 19:54:12 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (172.1
+6.210.50).
+<2>Jan 08 19:54:14 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (10.11.2
+46.200).
+<2>Jan 08 19:54:26 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (10.11
+.246.200).
+<2>Jan 08 19:55:25 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (172.16.
+210.50).
+<2>Jan 08 19:55:31 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (172.1
+6.210.50).
+<2>Jan 08 19:56:44 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (172.16.
+210.50).
+<2>Jan 08 19:56:50 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (172.1
+6.210.50).
+<2>Jan 08 19:58:07 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (172.16.
+210.50).
+<2>Jan 08 19:58:13 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (172.1
+6.210.50).
+<2>Jan 08 19:59:26 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (172.16.
+210.50).
+<2>Jan 08 19:59:32 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (172.1
+6.210.50).
+<2>Jan 08 20:00:45 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (172.16.
+210.50).
+<2>Jan 08 20:00:51 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (172.1
+6.210.50).
+<2>Jan 08 20:02:04 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (172.16.
+210.50).
+<2>Jan 08 20:02:09 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (172.1
+6.210.50).
+<2>Jan 08 20:03:23 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (172.16.
+210.50).
+<2>Jan 08 20:03:28 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (172.1
+6.210.50).
+<2>Jan 08 20:04:42 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (172.16.
+210.50).
+<2>Jan 08 20:04:47 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (172.1
+6.210.50).
+<2>Jan 08 20:06:03 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (172.16.
+210.50).
+<2>Jan 08 20:06:09 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (172.1
+6.210.50).
+<2>Jan 08 20:07:22 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (172.16.
+210.50).
+<2>Jan 08 20:07:28 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (172.1
+6.210.50).
+<2>Jan 08 20:08:41 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (172.16.
+210.50).
+<2>Jan 08 20:08:47 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (172.1
+6.210.50).
+<2>Jan 08 20:10:00 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (172.16.
+210.50).
+<2>Jan 08 20:10:06 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (172.1
+6.210.50).
+<2>Jan 08 20:11:19 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (172.16.
+210.50).
+<2>Jan 08 20:11:25 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (172.1
+6.210.50).
+<2>Jan 08 20:12:33 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (172.16.
+210.50).
+<2>Jan 08 20:12:39 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (172.1
+6.210.50).
+<2>Jan 08 20:13:48 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (172.16.
+210.50).
+<2>Jan 08 20:13:53 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (172.1
+6.210.50).
+<2>Jan 08 20:15:27 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (172.16.
+210.50).
+<2>Jan 08 20:15:33 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (172.1
+6.210.50).
+<2>Jan 08 20:17:06 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (172.16.
+210.50).
+<2>Jan 08 20:17:12 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (172.1
+6.210.50).
+<2>Jan 08 20:18:45 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (172.16.
+210.50).
+<2>Jan 08 20:18:51 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (172.1
+6.210.50).
+<2>Jan 08 20:20:00 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (172.16.
+210.50).
+<2>Jan 08 20:20:06 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (172.1
+6.210.50).
+<2>Jan 08 20:21:09 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (10.11.2
+46.200).
+<2>Jan 08 20:21:14 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (172.16.
+210.50).
+<2>Jan 08 20:21:20 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (172.1
+6.210.50).
+<2>Jan 08 20:21:21 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (10.11
+.246.200).
+<2>Jan 08 20:22:29 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (172.16.
+210.50).
+<2>Jan 08 20:22:35 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (172.1
+6.210.50).
+<2>Jan 08 20:22:39 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (10.11.2
+46.200).
+<2>Jan 08 20:22:50 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (10.11
+.246.200).
+<4>Jan 08 20:23:18 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<4>Jan 08 20:23:18 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 20:23:18 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 20:23:18 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 20:23:18 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 20:23:19 2018 %ETHERNET_DOWN-8-1: Ethernet port E6 is down.
+<2>Jan 08 20:23:21 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (10.20
+.6.252).
+<2>Jan 08 20:23:29 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (10.20.6
+.252).
+<4>Jan 08 20:23:35 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 20:23:35 2018 %ETHERNET_UP-8-2: Ethernet port E6 is up.
+<4>Jan 08 20:23:35 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 20:23:36 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<4>Jan 08 20:23:36 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/A
+reaTable' was changed by user 'manager'.
+<4>Jan 08 20:23:36 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 20:23:37 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<5>Jan 08 20:23:43 2018 %OSPF_NBR_2WAY-14-1: OSPF neighbor 1.1.1.1 transitioned 
+to 2WAY.
+<2>Jan 08 20:23:43 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (172.16.
+210.50).
+<2>Jan 08 20:23:49 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (172.1
+6.210.50).
+<4>Jan 08 20:23:55 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<2>Jan 08 20:23:55 2018 %OSPF_NBR_DOWN-14-3: OSPF neighbor 1.1.1.1 transitioned 
+to DOWN.
+<4>Jan 08 20:23:55 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 20:23:55 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 20:23:55 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 20:23:55 2018 %ETHERNET_DOWN-8-1: Ethernet port E6 is down.
+<4>Jan 08 20:23:57 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<4>Jan 08 20:23:57 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/A
+reaTable' was changed by user 'manager'.
+<2>Jan 08 20:23:58 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (10.20
+.6.252).
+<2>Jan 08 20:24:09 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (10.20.6
+.252).
+<2>Jan 08 20:24:10 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (10.11.2
+46.200).
+<4>Jan 08 20:24:17 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 20:24:17 2018 %ETHERNET_UP-8-2: Ethernet port E6 is up.
+<4>Jan 08 20:24:17 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 20:24:18 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 20:24:18 2018 %ETHERNET_UP-8-2: Ethernet port E4 is up.
+<4>Jan 08 20:24:18 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 20:24:20 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<4>Jan 08 20:24:20 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/A
+reaTable' was changed by user 'manager'.
+<4>Jan 08 20:24:20 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 20:24:20 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<2>Jan 08 20:24:23 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (10.11
+.246.200).
+<4>Jan 08 20:24:23 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 20:24:23 2018 %INTERFACE_DOWN-9-1: IP interface E4 is down.
+<2>Jan 08 20:24:23 2018 %ETHERNET_DOWN-8-1: Ethernet port E4 is down.
+<5>Jan 08 20:24:32 2018 %OSPF_NBR_FULL-14-2: OSPF neighbor 1.1.1.1 transitioned 
+to FULL.
+<4>Jan 08 20:24:32 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 20:24:32 2018 %INTERFACE_UP-9-2: IP interface E4 is up.
+<2>Jan 08 20:24:32 2018 %ETHERNET_UP-8-2: Ethernet port E4 is up.
+<2>Jan 08 20:24:38 2018 %OSPF_NBR_DOWN-14-3: OSPF neighbor 1.1.1.1 transitioned 
+to DOWN.
+<4>Jan 08 20:24:38 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 20:24:38 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 20:24:38 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 20:24:39 2018 %ETHERNET_DOWN-8-1: Ethernet port E6 is down.
+<4>Jan 08 20:24:40 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 20:24:40 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 20:24:40 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 20:24:40 2018 %ETHERNET_DOWN-8-1: Ethernet port E4 is down.
+<4>Jan 08 20:24:42 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<2>Jan 08 20:24:43 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (10.20
+.6.252).
+<2>Jan 08 20:24:51 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (10.20.6
+.252).
+<2>Jan 08 20:24:58 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (172.16.
+210.50).
+<4>Jan 08 20:24:59 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 20:24:59 2018 %ETHERNET_UP-8-2: Ethernet port E6 is up.
+<4>Jan 08 20:24:59 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 20:25:00 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 20:25:00 2018 %ETHERNET_UP-8-2: Ethernet port E4 is up.
+<4>Jan 08 20:25:00 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 20:25:01 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<4>Jan 08 20:25:02 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 20:25:02 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<2>Jan 08 20:25:04 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (172.1
+6.210.50).
+<4>Jan 08 20:25:05 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 20:25:05 2018 %INTERFACE_DOWN-9-1: IP interface E4 is down.
+<2>Jan 08 20:25:05 2018 %ETHERNET_DOWN-8-1: Ethernet port E4 is down.
+<5>Jan 08 20:25:26 2018 %OSPF_NBR_FULL-14-2: OSPF neighbor 1.1.1.1 transitioned 
+to FULL.
+<4>Jan 08 20:25:26 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 20:25:26 2018 %INTERFACE_UP-9-2: IP interface E4 is up.
+<2>Jan 08 20:25:26 2018 %ETHERNET_UP-8-2: Ethernet port E4 is up.
+<2>Jan 08 20:25:32 2018 %OSPF_NBR_DOWN-14-3: OSPF neighbor 1.1.1.1 transitioned 
+to DOWN.
+<4>Jan 08 20:25:32 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 20:25:32 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 20:25:32 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 20:25:33 2018 %ETHERNET_DOWN-8-1: Ethernet port E6 is down.
+<4>Jan 08 20:25:33 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 20:25:33 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 20:25:34 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 20:25:34 2018 %ETHERNET_DOWN-8-1: Ethernet port E4 is down.
+<4>Jan 08 20:25:36 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<2>Jan 08 20:25:37 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (10.20
+.6.252).
+<2>Jan 08 20:25:42 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (10.11.2
+46.200).
+<2>Jan 08 20:25:45 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (10.20.6
+.252).
+<4>Jan 08 20:25:53 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 20:25:53 2018 %ETHERNET_UP-8-2: Ethernet port E6 is up.
+<4>Jan 08 20:25:53 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<2>Jan 08 20:25:54 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (10.11
+.246.200).
+<4>Jan 08 20:25:54 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 20:25:54 2018 %ETHERNET_UP-8-2: Ethernet port E4 is up.
+<4>Jan 08 20:25:54 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 20:25:56 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<4>Jan 08 20:25:56 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 20:25:56 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 20:25:59 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 20:25:59 2018 %INTERFACE_DOWN-9-1: IP interface E4 is down.
+<2>Jan 08 20:25:59 2018 %ETHERNET_DOWN-8-1: Ethernet port E4 is down.
+<2>Jan 08 20:26:13 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (172.16.
+210.50).
+<2>Jan 08 20:26:18 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (172.1
+6.210.50).
+<5>Jan 08 20:26:20 2018 %OSPF_NBR_FULL-14-2: OSPF neighbor 1.1.1.1 transitioned 
+to FULL.
+<4>Jan 08 20:26:20 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 20:26:20 2018 %INTERFACE_UP-9-2: IP interface E4 is up.
+<2>Jan 08 20:26:20 2018 %ETHERNET_UP-8-2: Ethernet port E4 is up.
+<4>Jan 08 20:26:26 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 20:26:26 2018 %INTERFACE_DOWN-9-1: IP interface E4 is down.
+<2>Jan 08 20:26:26 2018 %ETHERNET_DOWN-8-1: Ethernet port E4 is down.
+<2>Jan 08 20:26:32 2018 %OSPF_NBR_DOWN-14-3: OSPF neighbor 1.1.1.1 transitioned 
+to DOWN.
+<4>Jan 08 20:26:32 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 20:26:32 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 20:26:32 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 20:26:33 2018 %ETHERNET_DOWN-8-1: Ethernet port E6 is down.
+<4>Jan 08 20:26:34 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 20:26:34 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 20:26:36 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<2>Jan 08 20:26:37 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (10.20
+.6.252).
+<2>Jan 08 20:26:45 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (10.20.6
+.252).
+<4>Jan 08 20:26:53 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 20:26:53 2018 %ETHERNET_UP-8-2: Ethernet port E6 is up.
+<4>Jan 08 20:26:53 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 20:26:54 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 20:26:54 2018 %ETHERNET_UP-8-2: Ethernet port E4 is up.
+<4>Jan 08 20:26:54 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 20:26:56 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<4>Jan 08 20:26:56 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 20:26:56 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 20:26:59 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 20:26:59 2018 %INTERFACE_DOWN-9-1: IP interface E4 is down.
+<2>Jan 08 20:26:59 2018 %ETHERNET_DOWN-8-1: Ethernet port E4 is down.
+<2>Jan 08 20:27:12 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (10.11.2
+46.200).
+<5>Jan 08 20:27:20 2018 %OSPF_NBR_FULL-14-2: OSPF neighbor 1.1.1.1 transitioned 
+to FULL.
+<4>Jan 08 20:27:21 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 20:27:21 2018 %INTERFACE_UP-9-2: IP interface E4 is up.
+<2>Jan 08 20:27:21 2018 %ETHERNET_UP-8-2: Ethernet port E4 is up.
+<2>Jan 08 20:27:23 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (10.11
+.246.200).
+<2>Jan 08 20:27:27 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (172.16.
+210.50).
+<2>Jan 08 20:27:33 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (172.1
+6.210.50).
+<2>Jan 08 20:27:43 2018 %OSPF_NBR_DOWN-14-3: OSPF neighbor 1.1.1.1 transitioned 
+to DOWN.
+<4>Jan 08 20:27:43 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 20:27:43 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 20:27:43 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 20:27:43 2018 %ETHERNET_DOWN-8-1: Ethernet port E6 is down.
+<4>Jan 08 20:27:44 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 20:27:44 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 20:27:44 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 20:27:44 2018 %ETHERNET_DOWN-8-1: Ethernet port E4 is down.
+<4>Jan 08 20:27:46 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<2>Jan 08 20:27:47 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (10.20
+.6.252).
+<2>Jan 08 20:27:55 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (10.20.6
+.252).
+<4>Jan 08 20:28:03 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 20:28:03 2018 %ETHERNET_UP-8-2: Ethernet port E6 is up.
+<4>Jan 08 20:28:03 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 20:28:04 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 20:28:04 2018 %ETHERNET_UP-8-2: Ethernet port E4 is up.
+<4>Jan 08 20:28:05 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 20:28:06 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<4>Jan 08 20:28:06 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 20:28:06 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 20:28:09 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 20:28:09 2018 %INTERFACE_DOWN-9-1: IP interface E4 is down.
+<2>Jan 08 20:28:09 2018 %ETHERNET_DOWN-8-1: Ethernet port E4 is down.
+<5>Jan 08 20:28:30 2018 %OSPF_NBR_FULL-14-2: OSPF neighbor 1.1.1.1 transitioned 
+to FULL.
+<4>Jan 08 20:28:30 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 20:28:30 2018 %INTERFACE_UP-9-2: IP interface E4 is up.
+<2>Jan 08 20:28:30 2018 %ETHERNET_UP-8-2: Ethernet port E4 is up.
+<2>Jan 08 20:28:42 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (10.11.2
+46.200).
+<2>Jan 08 20:28:52 2018 %OSPF_NBR_DOWN-14-3: OSPF neighbor 1.1.1.1 transitioned 
+to DOWN.
+<4>Jan 08 20:28:52 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 20:28:52 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 20:28:52 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 20:28:53 2018 %ETHERNET_DOWN-8-1: Ethernet port E6 is down.
+<4>Jan 08 20:28:54 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 20:28:54 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 20:28:54 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 20:28:54 2018 %ETHERNET_DOWN-8-1: Ethernet port E4 is down.
+<2>Jan 08 20:28:55 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (10.11
+.246.200).
+<4>Jan 08 20:28:56 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<2>Jan 08 20:28:57 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (10.20
+.6.252).
+<2>Jan 08 20:29:05 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (10.20.6
+.252).
+<2>Jan 08 20:29:06 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (172.16.
+210.50).
+<2>Jan 08 20:29:12 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (172.1
+6.210.50).
+<4>Jan 08 20:29:13 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 20:29:13 2018 %ETHERNET_UP-8-2: Ethernet port E6 is up.
+<4>Jan 08 20:29:13 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 20:29:14 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 20:29:14 2018 %ETHERNET_UP-8-2: Ethernet port E4 is up.
+<4>Jan 08 20:29:14 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 20:29:15 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<4>Jan 08 20:29:16 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 20:29:16 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 20:29:19 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 20:29:19 2018 %INTERFACE_DOWN-9-1: IP interface E4 is down.
+<2>Jan 08 20:29:19 2018 %ETHERNET_DOWN-8-1: Ethernet port E4 is down.
+<5>Jan 08 20:29:28 2018 %OSPF_NBR_FULL-14-2: OSPF neighbor 1.1.1.1 transitioned 
+to FULL.
+<4>Jan 08 20:29:28 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 20:29:28 2018 %INTERFACE_UP-9-2: IP interface E4 is up.
+<2>Jan 08 20:29:28 2018 %ETHERNET_UP-8-2: Ethernet port E4 is up.
+<2>Jan 08 20:29:40 2018 %OSPF_NBR_DOWN-14-3: OSPF neighbor 1.1.1.1 transitioned 
+to DOWN.
+<4>Jan 08 20:29:40 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 20:29:40 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 20:29:40 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 20:29:40 2018 %ETHERNET_DOWN-8-1: Ethernet port E6 is down.
+<4>Jan 08 20:29:41 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 20:29:41 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 20:29:41 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 20:29:41 2018 %ETHERNET_DOWN-8-1: Ethernet port E4 is down.
+<4>Jan 08 20:29:43 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<2>Jan 08 20:29:44 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (10.20
+.6.252).
+<2>Jan 08 20:29:52 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (10.20.6
+.252).
+<4>Jan 08 20:30:00 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 20:30:00 2018 %ETHERNET_UP-8-2: Ethernet port E6 is up.
+<4>Jan 08 20:30:00 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 20:30:01 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 20:30:01 2018 %ETHERNET_UP-8-2: Ethernet port E4 is up.
+<4>Jan 08 20:30:02 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 20:30:03 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<4>Jan 08 20:30:03 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 20:30:03 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 20:30:06 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 20:30:07 2018 %INTERFACE_DOWN-9-1: IP interface E4 is down.
+<2>Jan 08 20:30:07 2018 %ETHERNET_DOWN-8-1: Ethernet port E4 is down.
+<2>Jan 08 20:30:16 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (10.11.2
+46.200).
+<2>Jan 08 20:30:21 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (172.16.
+210.50).
+<2>Jan 08 20:30:27 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (172.1
+6.210.50).
+<5>Jan 08 20:30:27 2018 %OSPF_NBR_FULL-14-2: OSPF neighbor 1.1.1.1 transitioned 
+to FULL.
+<2>Jan 08 20:30:27 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (10.11
+.246.200).
+<4>Jan 08 20:30:27 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 20:30:27 2018 %INTERFACE_UP-9-2: IP interface E4 is up.
+<2>Jan 08 20:30:27 2018 %ETHERNET_UP-8-2: Ethernet port E4 is up.
+<2>Jan 08 20:30:49 2018 %OSPF_NBR_DOWN-14-3: OSPF neighbor 1.1.1.1 transitioned 
+to DOWN.
+<4>Jan 08 20:30:49 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 20:30:49 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 20:30:49 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 20:30:49 2018 %ETHERNET_DOWN-8-1: Ethernet port E6 is down.
+<4>Jan 08 20:30:50 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 20:30:50 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 20:30:50 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 20:30:51 2018 %ETHERNET_DOWN-8-1: Ethernet port E4 is down.
+<4>Jan 08 20:30:53 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<2>Jan 08 20:30:54 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (10.20
+.6.252).
+<2>Jan 08 20:31:02 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (10.20.6
+.252).
+<4>Jan 08 20:31:09 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 20:31:09 2018 %ETHERNET_UP-8-2: Ethernet port E6 is up.
+<4>Jan 08 20:31:10 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 20:31:11 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 20:31:11 2018 %ETHERNET_UP-8-2: Ethernet port E4 is up.
+<4>Jan 08 20:31:11 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 20:31:12 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<4>Jan 08 20:31:13 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 20:31:13 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 20:31:16 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 20:31:16 2018 %INTERFACE_DOWN-9-1: IP interface E4 is down.
+<2>Jan 08 20:31:16 2018 %ETHERNET_DOWN-8-1: Ethernet port E4 is down.
+<5>Jan 08 20:31:36 2018 %OSPF_NBR_FULL-14-2: OSPF neighbor 1.1.1.1 transitioned 
+to FULL.
+<2>Jan 08 20:31:37 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (172.16.
+210.50).
+<4>Jan 08 20:31:37 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 20:31:37 2018 %INTERFACE_UP-9-2: IP interface E4 is up.
+<2>Jan 08 20:31:37 2018 %ETHERNET_UP-8-2: Ethernet port E4 is up.
+<2>Jan 08 20:31:42 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (172.1
+6.210.50).
+<2>Jan 08 20:31:46 2018 %LOGIN-7-1: User 'manager' logged in via TELNET (10.11.2
+46.200).
+<2>Jan 08 20:31:49 2018 %OSPF_NBR_DOWN-14-3: OSPF neighbor 1.1.1.1 transitioned 
+to DOWN.
+<4>Jan 08 20:31:49 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 20:31:49 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 20:31:49 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 20:31:49 2018 %ETHERNET_DOWN-8-1: Ethernet port E6 is down.
+<4>Jan 08 20:31:50 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/OSPF/I
+nterfaceTable' was changed by user 'manager'.
+<4>Jan 08 20:31:50 2018 %CONFIG_CHANGE-5-6: Current config table 'Routing/IPAddr
+essTable' was changed by user 'manager'.
+<4>Jan 08 20:31:50 2018 %CONFIG_CHANGE-5-6: Current config table 'Ethernet/PortS
+ettingsTable' was changed by user 'manager'.
+<2>Jan 08 20:31:50 2018 %ETHERNET_DOWN-8-1: Ethernet port E4 is down.
+<4>Jan 08 20:31:52 2018 %CONFIG_CHANGE-5-6: Current config element of 'Routing/O
+SPF' was changed by user 'manager'.
+<2>Jan 08 20:31:53 2018 %LOGOUT-7-2: User 'manager' logged out via TELNET (10.20
+.6.252).
+
+MagnumDX# 
